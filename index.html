@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPO SIM 12 — LinkedIn | CXO Simulabs</title>
+<meta name="description" content="Master advanced metrics and growth through LinkedIn's pivotal decisions. A CPO Track simulation by CXO Simulabs.">
+<link rel="canonical" href="https://mohansimham.github.io/CPO-SIM-12-LinkedIn/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CPO SIM 12 — LinkedIn | CXO Simulabs">
+<meta property="og:description" content="Master advanced metrics and growth through LinkedIn's pivotal decisions. Test your product instincts through 10 real scenarios.">
+<meta property="og:url" content="https://mohansimham.github.io/CPO-SIM-12-LinkedIn/">
+<meta property="og:site_name" content="CXO Simulabs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CPO SIM 12 — LinkedIn | CXO Simulabs">
+<meta name="twitter:description" content="Master advanced metrics and growth through LinkedIn's pivotal decisions. Test your product instincts through 10 real scenarios.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"CPO SIM 12 — LinkedIn","url":"https://mohansimham.github.io/CPO-SIM-12-LinkedIn/","description":"Master advanced metrics and growth through LinkedIn's pivotal decisions. A CPO Track simulation by CXO Simulabs.","applicationCategory":"Education","provider":{"@type":"Organization","name":"CXO Simulabs","url":"https://www.cxosimulabs.com"}}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4J0M6TE3E"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Z4J0M6TE3E');</script>
+<style>
+:root {
+  --navy:#1a1a2e; --navy-mid:#16213e; --red:#e23744;
+  --accent:#0A66C2; --accent-light:#e8f1fb;
+  --white:#fff; --light:#f7f7f9; --border:#e5e7eb;
+  --text:#1f2937; --muted:#6b7280;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--light);color:var(--text);line-height:1.6;}
+.phase{display:none;}
+.phase.active{display:block;}
+
+/* NAV */
+.nav{background:var(--navy);padding:0 32px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+.nav-logo{color:#fff;font-weight:800;font-size:1.1em;letter-spacing:.5px;}
+.nav-logo span{color:var(--red);}
+.nav-track{background:rgba(10,102,194,.15);border:1px solid rgba(10,102,194,.3);color:#5b9bd5;padding:4px 12px;border-radius:20px;font-size:.75em;font-weight:600;letter-spacing:1px;text-transform:uppercase;}
+.nav-sims{display:flex;gap:4px;}
+.nav-sim{color:#778;text-decoration:none;font-size:.78em;padding:4px 10px;border-radius:6px;transition:all .2s;}
+.nav-sim:hover{color:#fff;background:rgba(255,255,255,.08);}
+.nav-sim.current{color:var(--accent);font-weight:600;}
+
+/* HERO BAND */
+.sim-band{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:48px 32px 40px;text-align:center;}
+.sim-band .eyebrow{display:inline-block;background:rgba(10,102,194,.15);border:1px solid rgba(10,102,194,.35);color:#5b9bd5;padding:5px 16px;border-radius:20px;font-size:.75em;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;margin-bottom:16px;}
+.sim-band h1{color:#fff;font-size:2em;font-weight:900;margin-bottom:8px;}
+.sim-band p{color:#778899;font-size:1em;max-width:520px;margin:0 auto;}
+
+/* CARD */
+.card{background:var(--white);border-radius:14px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,.06);max-width:620px;margin:0 auto;}
+.center-wrap{padding:40px 24px;}
+
+/* FORM */
+.form-group{margin-bottom:18px;}
+.form-group label{display:block;font-size:.85em;font-weight:600;color:var(--text);margin-bottom:6px;}
+.form-group input{width:100%;padding:12px 14px;border:2px solid var(--border);border-radius:8px;font-size:.95em;font-family:'Inter',sans-serif;transition:border-color .2s;outline:none;}
+.form-group input:focus{border-color:var(--accent);}
+.form-note{font-size:.8em;color:var(--muted);margin-top:8px;}
+.btn{display:inline-block;padding:13px 28px;border-radius:8px;font-weight:700;font-size:.95em;cursor:pointer;border:none;transition:all .2s;font-family:'Inter',sans-serif;}
+.btn-primary{background:var(--accent);color:#fff;width:100%;}
+.btn-primary:hover{background:#084e96;transform:translateY(-1px);}
+.btn-outline{background:transparent;border:2px solid var(--border);color:var(--text);}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent);}
+.btn-navy{background:var(--navy);color:#fff;width:100%;}
+.btn-navy:hover{background:var(--navy-mid);}
+.error-msg{color:#dc2626;font-size:.82em;margin-top:8px;display:none;}
+.success-msg{color:#059669;font-size:.82em;margin-top:8px;display:none;}
+
+/* OTP */
+.otp-input{letter-spacing:8px;font-size:1.4em;text-align:center;font-weight:700;}
+.otp-timer{font-size:.8em;color:var(--muted);text-align:center;margin-top:8px;}
+.resend-link{color:var(--accent);cursor:pointer;text-decoration:underline;}
+
+/* INTRO */
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;}
+.intro-card{background:var(--light);border-radius:10px;padding:18px;border-left:3px solid var(--accent);}
+.intro-card h4{font-size:.88em;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.intro-card p{font-size:.82em;color:var(--muted);}
+.attempt-badge{display:inline-flex;align-items:center;gap:6px;background:var(--accent-light);color:var(--accent);padding:6px 14px;border-radius:20px;font-size:.82em;font-weight:700;margin-bottom:20px;}
+
+/* QUESTIONS */
+.q-wrap{max-width:760px;margin:0 auto;padding:32px 24px;}
+.progress-bar-wrap{background:var(--white);border-bottom:1px solid var(--border);padding:14px 32px;}
+.progress-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;max-width:760px;margin-left:auto;margin-right:auto;}
+.progress-label{font-size:.82em;font-weight:600;color:var(--muted);}
+.progress-track{height:5px;background:#e5e7eb;border-radius:3px;max-width:760px;margin:0 auto;}
+.progress-fill{height:5px;background:var(--accent);border-radius:3px;transition:width .4s ease;}
+.scenario-box{background:var(--white);border-radius:12px;padding:28px;margin-bottom:24px;border-left:4px solid var(--accent);}
+.scenario-label{font-size:.72em;text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-weight:700;margin-bottom:10px;}
+.scenario-text{font-size:.93em;color:#374151;line-height:1.75;white-space:pre-line;}
+.scenario-text strong{display:block;color:var(--navy);font-weight:700;margin-top:14px;margin-bottom:4px;font-size:.95em;}
+.q-text{font-size:1.05em;font-weight:700;color:var(--navy);margin-bottom:20px;line-height:1.5;}
+.options{display:flex;flex-direction:column;gap:12px;}
+.option{background:var(--white);border:2px solid var(--border);border-radius:10px;padding:16px 18px;cursor:pointer;transition:all .2s;font-size:.93em;line-height:1.5;}
+.option:hover{border-color:var(--accent);background:var(--accent-light);}
+.option.locked{pointer-events:none;cursor:default;}
+.feedback-box{background:#f8fafc;border-radius:10px;padding:20px;margin-top:20px;border-left:3px solid var(--navy);font-size:.9em;color:#374151;line-height:1.7;}
+.feedback-box .fb-label{font-weight:700;color:var(--navy);margin-bottom:6px;font-size:.85em;text-transform:uppercase;letter-spacing:.5px;}
+.next-btn-wrap{margin-top:24px;text-align:right;}
+
+/* RESULTS */
+.results-wrap{max-width:800px;margin:0 auto;padding:40px 24px;}
+.score-ring-wrap{text-align:center;margin:24px 0;}
+.score-ring{position:relative;display:inline-block;}
+.score-ring canvas{display:block;}
+.score-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;}
+.score-num{font-size:2.4em;font-weight:900;color:var(--navy);}
+.score-pct{font-size:.85em;color:var(--muted);font-weight:600;}
+.tier-badge{display:inline-block;padding:8px 24px;border-radius:20px;font-weight:700;font-size:.95em;margin:12px 0;}
+.tier-mastery{background:#dcfce7;color:#166534;}
+.tier-proficiency{background:#dbeafe;color:#1e40af;}
+.tier-competency{background:#fef9c3;color:#854d0e;}
+.tier-foundational{background:#fee2e2;color:#991b1b;}
+.results-summary{background:var(--white);border-radius:12px;padding:24px;margin:20px 0;}
+.results-summary h3{font-size:1em;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.q-result-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:.88em;}
+.q-result-row:last-child{border-bottom:none;}
+.q-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.dot-high{background:#059669;}
+.dot-mid{background:#f59e0b;}
+.dot-low{background:#dc2626;}
+.cert-section{background:var(--white);border-radius:12px;padding:24px;margin:20px 0;text-align:center;}
+.cert-section h3{font-size:1em;font-weight:700;color:var(--navy);margin-bottom:16px;}
+#certCanvas{border-radius:8px;max-width:100%;box-shadow:0 4px 20px rgba(0,0,0,.1);}
+.cert-buttons{display:flex;gap:12px;justify-content:center;margin-top:16px;flex-wrap:wrap;}
+.cert-buttons .btn{width:auto;}
+
+/* HUB NAV */
+.hub-section{background:var(--navy);padding:60px 24px;}
+.hub-inner{max-width:800px;margin:0 auto;}
+.hub-section h3{color:#fff;font-size:1.2em;font-weight:700;margin-bottom:6px;}
+.hub-section p{color:#778899;font-size:.9em;margin-bottom:28px;}
+.hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
+.hub-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:18px;text-decoration:none;transition:all .2s;display:block;}
+.hub-card:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);transform:translateY(-2px);}
+.hub-card.current-sim{border-color:rgba(10,102,194,.5);background:rgba(10,102,194,.08);}
+.hub-card .hw{font-size:.72em;color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.hub-card .hco{color:#fff;font-weight:700;font-size:.95em;}
+.hub-card .htopic{color:#556677;font-size:.78em;margin-top:4px;}
+.hub-card .hstatus{font-size:.72em;margin-top:8px;font-weight:600;}
+.status-done{color:#4ade80;}
+.status-available{color:var(--accent);}
+.status-locked{color:#445566;}
+
+/* ATTEMPT 2 PROMPT */
+.attempt2-wrap{background:var(--white);border-radius:12px;padding:28px;margin:20px 0;text-align:center;border:2px solid var(--accent);}
+.attempt2-wrap h3{color:var(--navy);font-weight:800;font-size:1.1em;margin-bottom:8px;}
+.attempt2-wrap p{color:var(--muted);font-size:.9em;margin-bottom:20px;}
+
+/* BLOCKED */
+.blocked-wrap{text-align:center;padding:60px 24px;max-width:500px;margin:0 auto;}
+.blocked-icon{font-size:3em;margin-bottom:16px;}
+.blocked-wrap h2{color:var(--navy);font-weight:800;margin-bottom:10px;}
+.blocked-wrap p{color:var(--muted);font-size:.95em;margin-bottom:24px;}
+
+/* CUMULATIVE FEEDBACK */
+.cumulative-card{margin:20px 0;}
+.cumulative-card h3{font-size:1em;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.comp-bar-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+.comp-label{width:170px;font-size:.78em;font-weight:600;color:var(--text);flex-shrink:0;}
+.comp-track{flex:1;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;}
+.comp-fill{height:6px;border-radius:3px;transition:width .6s ease;}
+.comp-pct{width:36px;font-size:.78em;font-weight:700;color:var(--muted);text-align:right;}
+.insight-box{margin-top:18px;background:var(--light);border-radius:10px;padding:18px;border-left:3px solid var(--accent);}
+.insight-label{font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:8px;}
+.insight-text{font-size:.9em;color:#374151;line-height:1.75;}
+.strengths-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
+.strength-tag{background:rgba(5,150,105,.1);border:1px solid rgba(5,150,105,.25);color:#065f46;padding:4px 10px;border-radius:12px;font-size:.75em;font-weight:600;}
+.gap-tag{background:rgba(220,38,38,.08);border:1px solid rgba(220,38,38,.2);color:#991b1b;padding:4px 10px;border-radius:12px;font-size:.75em;font-weight:600;}
+
+/* NEXT SIM PROMO */
+.next-sim-banner{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:20px 24px;margin:20px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.next-sim-banner h4{color:#fff;font-size:1em;font-weight:700;margin-bottom:4px;}
+.next-sim-banner p{color:#778899;font-size:.85em;}
+.btn-gold{background:linear-gradient(135deg,#c9a227,#e8c84a);color:#1a1a2e;font-weight:700;padding:10px 24px;border-radius:8px;border:none;cursor:pointer;font-size:.9em;text-decoration:none;display:inline-block;}
+.btn-gold:hover{opacity:.9;transform:translateY(-1px);}
+
+/* LEARN CARDS */
+.learn-wrap{max-width:620px;margin:0 auto;padding:32px 24px;}
+.learn-card{background:var(--white);border-radius:14px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,.06);display:none;}
+.learn-card.active{display:block;}
+.learn-card .learn-icon{font-size:2.4em;margin-bottom:16px;}
+.learn-card h3{font-size:1.15em;font-weight:800;color:var(--navy);margin-bottom:6px;}
+.learn-card .learn-subtitle{font-size:.85em;color:var(--accent);font-weight:600;margin-bottom:16px;}
+.learn-card p{font-size:.92em;color:#374151;line-height:1.75;margin-bottom:14px;}
+.learn-card .learn-apply{background:var(--accent-light);border-radius:10px;padding:18px;border-left:3px solid var(--accent);margin-top:16px;}
+.learn-card .learn-apply h4{font-size:.82em;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;}
+.learn-card .learn-apply p{font-size:.88em;color:#374151;margin-bottom:0;}
+.learn-card .learn-example{background:var(--light);border-radius:10px;padding:16px;margin-top:14px;}
+.learn-card .learn-example h4{font-size:.82em;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.learn-card .learn-example p{font-size:.85em;color:var(--muted);margin-bottom:0;font-style:italic;}
+.learn-card .learn-framework{background:#1a1a2e;border-radius:10px;padding:18px 20px;margin-top:14px;border-left:3px solid var(--accent);}
+.learn-card .learn-framework h4{font-size:.82em;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+.learn-card .learn-framework ol{list-style:none;padding:0;margin:0;counter-reset:fw;}
+.learn-card .learn-framework ol li{counter-increment:fw;font-size:.84em;color:rgba(255,255,255,.75);padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06);line-height:1.5;}
+.learn-card .learn-framework ol li:last-child{border-bottom:none;}
+.learn-card .learn-framework ol li::before{content:counter(fw) ". ";color:var(--accent);font-weight:700;}
+.learn-card .learn-framework ol li span{color:rgba(255,255,255,.4);font-size:.9em;}
+.learn-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;}
+.learn-dots{display:flex;gap:8px;}
+.learn-dot{width:10px;height:10px;border-radius:50%;background:var(--border);transition:background .2s;}
+.learn-dot.active{background:var(--accent);}
+.learn-counter{font-size:.82em;color:var(--muted);font-weight:600;}
+
+/* SOURCES & DISCLAIMER */
+.sources-section{background:var(--white);border-radius:12px;padding:24px;margin:20px 0;}
+.sources-toggle{display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;}
+.sources-toggle h3{font-size:1em;font-weight:700;color:var(--navy);margin:0;}
+.sources-toggle .toggle-icon{font-size:1.2em;color:var(--muted);transition:transform .2s;}
+.sources-toggle .toggle-icon.open{transform:rotate(180deg);}
+.sources-content{display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--border);}
+.sources-content.open{display:block;}
+.sources-content ul{list-style:none;padding:0;}
+.sources-content li{font-size:.85em;color:#374151;padding:6px 0;border-bottom:1px solid #f0f0f0;line-height:1.6;}
+.sources-content li:last-child{border-bottom:none;}
+.sources-content li a{color:var(--accent);text-decoration:none;}
+.sources-content li a:hover{text-decoration:underline;}
+.sources-content .disclaimer-text{font-size:.82em;color:var(--muted);line-height:1.7;margin-top:14px;padding:14px;background:var(--light);border-radius:8px;}
+
+/* FOOTER */
+footer{background:#0d1117;color:#445566;text-align:center;padding:24px;font-size:.8em;}
+footer a{color:#556677;text-decoration:none;}
+
+@media(max-width:600px){
+  .nav-sims{display:none;}
+  .intro-grid{grid-template-columns:1fr;}
+  .sim-band h1{font-size:1.6em;}
+  .cert-buttons{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo" id="nav-logo" onclick="founderTap()">CXO <span>Simulabs</span></div>
+  <div class="nav-track">CPO Track</div>
+  <div class="nav-sims">
+    <a href="https://mohansimham.github.io/CPO-SIM-1-Airbnb/" class="nav-sim">SIM 1</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-2-Spotify/" class="nav-sim">SIM 2</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-3-Netflix/" class="nav-sim">SIM 3</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-4-Amazon/" class="nav-sim">SIM 4</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-5-Uber/" class="nav-sim">SIM 5</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-6-Zomato/" class="nav-sim">SIM 6</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-7-Slack/" class="nav-sim">SIM 7</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-8-Google/" class="nav-sim">SIM 8</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-9-Meta/" class="nav-sim">SIM 9</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-10-Shopify/" class="nav-sim">SIM 10</a>
+    <a href="https://mohansimham.github.io/CPO-SIM-11-Duolingo/" class="nav-sim">SIM 11</a>
+    <a href="#" class="nav-sim current">SIM 12</a>
+  </div>
+</nav>
+
+<!-- PHASE: BLOCKED -->
+<div id="phase-blocked" class="phase">
+  <div class="sim-band"><div class="eyebrow">CPO Simulation 12 · LinkedIn</div><h1>LinkedIn: Advanced Metrics & Growth</h1></div>
+  <div class="center-wrap">
+    <div class="blocked-wrap">
+      <div class="blocked-icon">🔒</div>
+      <h2>Both Attempts Used</h2>
+      <p>You've completed both attempts for this simulation. Each simulation allows 2 attempts to give you a chance to improve your score.</p>
+      <p style="margin-top:16px;color:var(--accent);font-weight:600;">Ready for your next challenge?</p>
+      <div style="margin-top:24px;">
+        <a href="https://mohansimham.github.io/CPO-SIM-1-Airbnb/" class="btn btn-navy" style="display:inline-block;text-decoration:none;width:auto;">Try SIM 1 — Airbnb →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE: EMAIL GATE -->
+<div id="phase-email" class="phase">
+  <div class="sim-band">
+    <div class="eyebrow">CPO Simulation 12 · LinkedIn</div>
+    <h1>LinkedIn: Advanced Metrics & Growth</h1>
+    <p>10 pivotal moments. Real product decisions. How would you have built it?</p>
+  </div>
+  <div class="center-wrap">
+    <div class="card">
+      <h2 style="font-size:1.2em;font-weight:800;color:var(--navy);margin-bottom:6px;">Let's get started</h2>
+      <p style="font-size:.88em;color:var(--muted);margin-bottom:24px;">We'll send your personalised certificate to your email when you complete the simulation.</p>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="input-name" placeholder="First and last name" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="input-email" placeholder="your@email.com" autocomplete="email">
+        <div class="form-note">Used to send your certificate and improve your experience. No spam.</div>
+      </div>
+      <div id="email-error" class="error-msg">Please enter a valid name and email address.</div>
+      <button class="btn btn-primary" onclick="sendOTP()" id="send-otp-btn" style="margin-top:8px;">Send Verification Code →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE: OTP -->
+<div id="phase-otp" class="phase">
+  <div class="sim-band">
+    <div class="eyebrow">CPO Simulation 12 · LinkedIn</div>
+    <h1>Check Your Email</h1>
+    <p>Enter the 6-digit code we just sent you.</p>
+  </div>
+  <div class="center-wrap">
+    <div class="card">
+      <h2 style="font-size:1.1em;font-weight:800;color:var(--navy);margin-bottom:6px;">Verify your email</h2>
+      <p style="font-size:.88em;color:var(--muted);margin-bottom:24px;">Code sent to <strong id="otp-email-display"></strong>. Expires in <span id="otp-timer">10:00</span>.</p>
+      <div class="form-group">
+        <label>Verification Code</label>
+        <input type="text" id="input-otp" class="otp-input" placeholder="000000" maxlength="6" inputmode="numeric">
+      </div>
+      <div id="otp-error" class="error-msg">Incorrect code. Please try again.</div>
+      <div id="otp-success" class="success-msg">✓ Email verified!</div>
+      <button class="btn btn-primary" onclick="verifyOTP()" style="margin-top:8px;">Verify & Start Simulation →</button>
+      <p style="font-size:.82em;color:var(--muted);margin-top:14px;text-align:center;">Didn't get it? <span class="resend-link" onclick="resendOTP()">Resend code</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE: INTRO -->
+<div id="phase-intro" class="phase">
+  <div class="sim-band">
+    <div class="eyebrow">CPO Simulation 12 · LinkedIn</div>
+    <h1>LinkedIn: Advanced Metrics & Growth</h1>
+    <p>You're the Product Manager. 10 real scenarios. What do you decide?</p>
+  </div>
+  <div class="center-wrap">
+    <div class="card">
+      <div id="attempt-badge-display" class="attempt-badge">🎯 Attempt 1 of 2</div>
+      <h2 style="font-size:1.1em;font-weight:800;color:var(--navy);margin-bottom:10px;">What you'll be tested on</h2>
+      <div class="intro-grid">
+        <div class="intro-card"><h4>Growth Loops & Flywheels</h4><p>Designing self-reinforcing growth systems where one user's action creates value for the next.</p></div>
+        <div class="intro-card"><h4>North Star & Metric Hierarchies</h4><p>Choosing the right metrics to measure success and aligning teams around what actually matters.</p></div>
+        <div class="intro-card"><h4>Cohort Analysis & Retention</h4><p>Understanding user behaviour over time — who stays, who leaves, and why the curves differ.</p></div>
+        <div class="intro-card"><h4>Experimentation at Scale</h4><p>Running A/B tests, measuring incrementality, and making high-stakes decisions with imperfect data.</p></div>
+      </div>
+      <p style="font-size:.85em;color:var(--muted);margin-bottom:20px;">10 questions · Multiple choice · Feedback after every answer · ~15 minutes</p>
+      <button class="btn btn-primary" onclick="showPhase('learn')">Continue →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE: LEARN -->
+<div id="phase-learn" class="phase">
+  <div class="sim-band">
+    <div class="eyebrow">CPO Simulation 12 · LinkedIn</div>
+    <h1>Before You Begin</h1>
+    <p>A quick refresher on the frameworks you'll apply in this simulation.</p>
+  </div>
+  <div class="learn-wrap">
+
+    <div class="learn-card active" data-learn="0">
+      <div class="learn-icon">🔄</div>
+      <h3>Growth Loops & Flywheels</h3>
+      <div class="learn-subtitle">Self-reinforcing systems where output becomes input</div>
+      <p>Traditional marketing funnels are linear: acquire, activate, retain. Growth loops are circular: each user's action generates output that feeds back into the system to acquire or activate the next user. A viral loop (user invites friend), a content loop (user creates content that attracts visitors via SEO), or a paid loop (revenue funds ads that acquire users who generate revenue) — each is a self-reinforcing cycle. The best products have multiple interlocking loops that compound over time.</p>
+      <div class="learn-apply">
+        <h4>How to apply it</h4>
+        <p>Map every growth mechanism in your product as a loop, not a funnel. Identify the input (new user), the action (what they do), the output (what that action creates), and how the output becomes a new input. Then measure the efficiency of each loop: what percentage of output converts back to input? A viral loop with a K-factor of 0.5 means every 2 users generate 1 new user — not viral on its own, but powerful when compounded with other loops.</p>
+      </div>
+      <div class="learn-example">
+        <h4>Example</h4>
+        <p>LinkedIn's core growth loop: a professional joins → builds their profile → appears in search results and "People You May Know" → their presence attracts former colleagues to join → those colleagues build profiles → the cycle repeats. This loop is supercharged by a content loop: members post articles → articles appear in Google search → visitors discover LinkedIn → they join to engage with the content → they create more content. By 2015, LinkedIn had 400M members largely through these interlocking loops, not paid advertising.</p>
+      </div>
+      <div class="learn-framework">
+        <h4>Growth Loop Mapping Template</h4>
+        <ol>
+          <li>Input <span>— What triggers the loop? (New user sign-up, content creation, purchase, invitation sent)</span></li>
+          <li>Action <span>— What does the user do inside the product? (Complete profile, post content, invite colleagues, engage)</span></li>
+          <li>Output <span>— What does that action produce? (SEO content, social proof, invitations, data, revenue)</span></li>
+          <li>Reinvestment <span>— How does the output become a new input? (SEO drives sign-ups, invites bring users, revenue funds ads)</span></li>
+          <li>Loop Efficiency <span>— What % of output converts back to input? (K-factor for viral, CAC payback for paid, CTR for content)</span></li>
+          <li>Compounding Rate <span>— How fast does the loop cycle? (Daily, weekly, monthly? Faster loops compound more.)</span></li>
+          <li>Interconnections <span>— How do your loops reinforce each other? (Content loop feeds viral loop feeds paid loop)</span></li>
+        </ol>
+      </div>
+      <div class="learn-nav">
+        <span class="learn-counter">1 of 4</span>
+        <div class="learn-dots"><span class="learn-dot active"></span><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot"></span></div>
+        <button class="btn btn-primary" style="width:auto;padding:10px 24px;" onclick="nextLearnCard()">Next →</button>
+      </div>
+    </div>
+
+    <div class="learn-card" data-learn="1">
+      <div class="learn-icon">🎯</div>
+      <h3>North Star Metrics & Metric Hierarchies</h3>
+      <div class="learn-subtitle">One metric to rule them all — and a tree that supports it</div>
+      <p>A North Star Metric (NSM) captures the core value your product delivers. It's the single metric that, if it grows, means your business is healthy. But a North Star alone isn't enough — you need a metric hierarchy: the NSM at the top, supported by input metrics that teams can directly influence. Without the hierarchy, teams optimize local metrics that may not move the North Star. With it, every team knows exactly how their work connects to company success.</p>
+      <div class="learn-apply">
+        <h4>How to apply it</h4>
+        <p>Choose a North Star that reflects value delivered to users, not just revenue extracted. Then decompose it: NSM = Input 1 × Input 2 × Input 3. Each input metric should be owned by a specific team. For example, if your NSM is "Weekly Active Members Who Post," it decomposes into: (new members activated this week) × (returning members) × (posting rate). Growth team owns activation, product team owns retention, content team owns posting rate. Now every team has a clear metric and clear accountability.</p>
+      </div>
+      <div class="learn-example">
+        <h4>Example</h4>
+        <p>LinkedIn's North Star evolved over time. Early on, it was "connections made per week" — because connections drove the network effect. As the platform matured, it shifted to "monthly active sessions" because LinkedIn needed users to come back regularly, not just connect once. The metric hierarchy: MAU = (total members) × (activation rate) × (return frequency). The growth team focused on activation (getting new members to add 5 connections in the first week — a magic number that predicted long-term retention). The feed team focused on return frequency (making the feed valuable enough to check daily).</p>
+      </div>
+      <div class="learn-framework">
+        <h4>North Star Metric Framework</h4>
+        <ol>
+          <li>Define Core Value <span>— What value does your product deliver? For LinkedIn: "connecting professionals to opportunity." The NSM must measure this.</span></li>
+          <li>Choose the NSM <span>— One metric that grows when users get value. Not revenue (that's an output). Not sign-ups (that's an input). The value moment.</span></li>
+          <li>Decompose into Inputs <span>— NSM = Input A × Input B × Input C. Each input should be directly influenceable by a team.</span></li>
+          <li>Assign Ownership <span>— Each input metric has one team that owns it. No shared ownership — shared ownership is no ownership.</span></li>
+          <li>Set Targets <span>— Each input metric gets a quarterly target. If all input targets are hit, the NSM target should follow mathematically.</span></li>
+          <li>Counter-Metrics <span>— For each input, define a counter-metric that prevents gaming. (e.g., "connections" countered by "connection acceptance rate")</span></li>
+          <li>Review Cadence <span>— NSM reviewed monthly at leadership level. Input metrics reviewed weekly by owning teams.</span></li>
+        </ol>
+      </div>
+      <div class="learn-nav">
+        <span class="learn-counter">2 of 4</span>
+        <div class="learn-dots"><span class="learn-dot"></span><span class="learn-dot active"></span><span class="learn-dot"></span><span class="learn-dot"></span></div>
+        <button class="btn btn-primary" style="width:auto;padding:10px 24px;" onclick="nextLearnCard()">Next →</button>
+      </div>
+    </div>
+
+    <div class="learn-card" data-learn="2">
+      <div class="learn-icon">📊</div>
+      <h3>Cohort Analysis & Retention Curves</h3>
+      <div class="learn-subtitle">Averages lie — cohorts tell the truth about your product</div>
+      <p>Aggregate metrics hide the story. If your overall retention is 30%, it might mean every cohort retains at 30% (stable) or that old cohorts retain at 50% while new cohorts retain at 10% (crisis). Cohort analysis groups users by when they joined (or when they took an action) and tracks their behaviour over time. Retention curves show the shape of user engagement — the steep initial drop, the flattening point where habits form, and the long-term plateau that determines your product's true health.</p>
+      <div class="learn-apply">
+        <h4>How to apply it</h4>
+        <p>Build cohort retention tables weekly: rows are sign-up weeks, columns are weeks since sign-up. Look for three things: (1) Is the retention curve flattening? If it never flattens, users are slowly leaking and your product doesn't create habits. (2) Are newer cohorts retaining better than older ones? This means product improvements are working. (3) Where is the steepest drop? That's where your activation or onboarding is failing. The "magic number" is the activation threshold where retention dramatically improves — find it, then engineer your onboarding to get every user there.</p>
+      </div>
+      <div class="learn-example">
+        <h4>Example</h4>
+        <p>LinkedIn's growth team discovered that users who added 5 connections in their first week had dramatically higher long-term retention than those who added fewer. This "5 connections in 7 days" became LinkedIn's magic number — the activation threshold. The entire onboarding flow was redesigned around this insight: address book import, "People You May Know," company-based suggestions — all engineered to get users to 5 connections as fast as possible. Cohort analysis showed that post-redesign cohorts retained at 2x the rate of pre-redesign cohorts at D30.</p>
+      </div>
+      <div class="learn-framework">
+        <h4>Cohort Analysis Playbook</h4>
+        <ol>
+          <li>Define the Cohort <span>— Group users by sign-up date, activation date, feature adoption date, or campaign source. The grouping depends on the question.</span></li>
+          <li>Choose the Metric <span>— What are you tracking over time? Return visits, purchases, feature usage, revenue? One metric per analysis.</span></li>
+          <li>Build the Table <span>— Rows = cohorts. Columns = time periods. Cells = % of cohort still active. Look at it weekly.</span></li>
+          <li>Find the Flattening <span>— Where does the retention curve level off? Users past this point are habitual. This is your "core" user base.</span></li>
+          <li>Find the Magic Number <span>— What action separates retained users from churned users? (LinkedIn: 5 connections. Facebook: 7 friends in 10 days.)</span></li>
+          <li>Compare Cohorts <span>— Are newer cohorts better or worse? If worse, product/market is degrading. If better, your improvements are working.</span></li>
+          <li>Segment Within Cohorts <span>— Break cohorts by source, geography, device, or plan. Find which segments retain best and why.</span></li>
+        </ol>
+      </div>
+      <div class="learn-nav">
+        <span class="learn-counter">3 of 4</span>
+        <div class="learn-dots"><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot active"></span><span class="learn-dot"></span></div>
+        <button class="btn btn-primary" style="width:auto;padding:10px 24px;" onclick="nextLearnCard()">Next →</button>
+      </div>
+    </div>
+
+    <div class="learn-card" data-learn="3">
+      <div class="learn-icon">🧪</div>
+      <h3>Experimentation & Network Effects</h3>
+      <div class="learn-subtitle">Measuring growth in systems where users affect each other</div>
+      <p>Standard A/B testing assumes independence — one user's experience doesn't affect another's. But in networked products like LinkedIn, this assumption breaks. If you show User A a new feature that makes them post more, User B sees more content in their feed even though they're in the control group. This "network interference" means standard A/B tests can underestimate (or overestimate) the true effect of changes. Advanced experimentation in networked products requires techniques like cluster-based randomisation and difference-in-differences analysis.</p>
+      <div class="learn-apply">
+        <h4>How to apply it</h4>
+        <p>For features that affect only the individual user (e.g., UI changes), standard A/B testing works fine. For features that create network effects (e.g., new ways to connect, content creation tools), use cluster-based randomisation: randomise entire networks or geographic clusters, not individual users. For features you can't A/B test (e.g., pricing changes, platform-wide policies), use pre/post analysis with a control group (difference-in-differences) or synthetic control methods. Always define your primary metric, sample size, and decision criteria before running the test.</p>
+      </div>
+      <div class="learn-example">
+        <h4>Example</h4>
+        <p>LinkedIn's "People You May Know" (PYMK) feature couldn't be properly A/B tested at the individual level because of network effects: if User A gets PYMK suggestions and sends connection requests, User B (in the control group) receives those requests and becomes more engaged. The true effect of PYMK was being leaked into the control group. LinkedIn's data science team used geographic cluster randomisation — entire city-level networks were assigned to treatment or control — to measure the true impact. The result: PYMK's actual effect on connections was 30% higher than the individual-level A/B test suggested, because the test had been underestimating the network amplification effect.</p>
+      </div>
+      <div class="learn-framework">
+        <h4>Experimentation Decision Framework</h4>
+        <ol>
+          <li>Network Impact Check <span>— Does this feature affect other users? If yes, individual-level A/B testing will give misleading results.</span></li>
+          <li>Choose the Method <span>— Individual A/B for isolated features. Cluster randomisation for networked features. Diff-in-diff for untestable changes.</span></li>
+          <li>Define Success Criteria <span>— Primary metric, minimum detectable effect, confidence level, sample size — all BEFORE running the test.</span></li>
+          <li>Guard Rails <span>— Define metrics that must NOT degrade (e.g., "engagement can't drop >2%"). Stop the test if guardrails are breached.</span></li>
+          <li>Run Duration <span>— Long enough for statistical significance AND to capture novelty effects wearing off. Usually 2-4 weeks minimum.</span></li>
+          <li>Novelty & Primacy <span>— New features often spike then decay (novelty) or start slow then grow (learning). Wait for the curve to stabilise.</span></li>
+          <li>Decision Framework <span>— What happens if results are inconclusive? Ship to 50%? Run longer? Kill it? Decide this before the test ends.</span></li>
+        </ol>
+      </div>
+      <div class="learn-nav">
+        <span class="learn-counter">4 of 4</span>
+        <div class="learn-dots"><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot"></span><span class="learn-dot active"></span></div>
+        <button class="btn btn-primary" style="width:auto;padding:10px 24px;" onclick="startSim()">Start Simulation →</button>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- PHASE: QUESTIONS -->
+<div id="phase-questions" class="phase">
+  <div class="progress-bar-wrap">
+    <div class="progress-top">
+      <span class="progress-label" id="q-progress-label">Question 1 of 10</span>
+      <span class="progress-label" id="q-score-label">Score: 0</span>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+  </div>
+  <div class="q-wrap">
+    <div class="scenario-box">
+      <div class="scenario-label">Scenario</div>
+      <div class="scenario-text" id="q-scenario"></div>
+    </div>
+    <div class="q-text" id="q-question"></div>
+    <div class="options" id="q-options"></div>
+    <div class="feedback-box" id="q-feedback" style="display:none;">
+      <div class="fb-label">Expert Analysis</div>
+      <div id="q-feedback-text"></div>
+    </div>
+    <div class="next-btn-wrap">
+      <button class="btn btn-navy" id="next-btn" onclick="nextQuestion()" style="display:none;">Next Question →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE: RESULTS -->
+<div id="phase-results" class="phase">
+  <div class="sim-band">
+    <div class="eyebrow">Simulation Complete</div>
+    <h1 id="results-heading">Your Results</h1>
+  </div>
+  <div class="results-wrap">
+
+    <div class="card" style="text-align:center;margin-bottom:20px;">
+      <div class="score-ring-wrap">
+        <div class="score-ring">
+          <canvas id="scoreRingCanvas" width="160" height="160"></canvas>
+          <div class="score-center">
+            <div class="score-num" id="result-pct">0%</div>
+            <div class="score-pct" id="result-score-label">0 / 0</div>
+          </div>
+        </div>
+      </div>
+      <div class="tier-badge" id="tier-badge">Strategic Mastery</div>
+      <p id="tier-feedback" style="color:var(--muted);font-size:.9em;max-width:480px;margin:0 auto;"></p>
+    </div>
+
+    <!-- Next Sim Banner (prominent) -->
+    <div class="next-sim-banner" id="next-sim-banner" style="display:none;">
+      <div>
+        <h4>Up next: SIM 1 — Airbnb</h4>
+        <p>Platform Decisions · Strategic Thinking · Stakeholder Management · 10 new decisions</p>
+      </div>
+      <a href="https://mohansimham.github.io/CPO-SIM-1-Airbnb/" class="btn-gold">Start SIM 1 →</a>
+    </div>
+
+    <div class="results-summary">
+      <h3>Decision Analysis — Expert Feedback on Every Choice</h3>
+      <div id="q-breakdown"></div>
+    </div>
+
+    <!-- Cumulative Feedback -->
+    <div class="card cumulative-card" id="cumulative-section">
+      <h3>Your CPO Profile</h3>
+      <p style="font-size:.82em;color:var(--muted);margin-bottom:20px;">Based on your decision patterns across all 10 scenarios</p>
+      <div id="competency-bars"></div>
+      <div class="insight-box">
+        <div class="insight-label">Strategic Insight</div>
+        <div class="insight-text" id="insight-text"></div>
+        <div style="margin-top:14px;">
+          <div style="font-size:.75em;font-weight:700;color:#059669;margin-bottom:6px;">STRENGTHS</div>
+          <div class="strengths-row" id="strength-tags"></div>
+        </div>
+        <div style="margin-top:12px;">
+          <div style="font-size:.75em;font-weight:700;color:#dc2626;margin-bottom:6px;">DEVELOP FURTHER</div>
+          <div class="strengths-row" id="gap-tags"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attempt 2 prompt (shown if attempt 1 done) -->
+    <div class="attempt2-wrap" id="attempt2-prompt" style="display:none;">
+      <h3>Try Attempt 2?</h3>
+      <p>Different questions, same competencies. Can you improve your score?</p>
+      <button class="btn btn-primary" onclick="startAttempt2()" style="width:auto;padding:12px 32px;">Start Attempt 2 →</button>
+    </div>
+
+    <div class="cert-section">
+      <h3>Your Certificate</h3>
+      <p style="font-size:.82em;color:var(--muted);margin-bottom:16px;">Download the certificate for LinkedIn or the square badge for Instagram, WhatsApp and other social media.</p>
+      <canvas id="certCanvas" width="1200" height="850"></canvas>
+      <div class="cert-buttons" style="margin-top:14px;">
+        <button class="btn btn-navy" onclick="downloadCert()" style="width:auto;">↓ Certificate (LinkedIn)</button>
+        <button class="btn btn-navy" onclick="downloadBadge()" style="width:auto;">↓ Badge (Instagram)</button>
+        <button class="btn btn-outline" onclick="shareLinkedIn()" style="width:auto;">Share LinkedIn</button>
+        <button class="btn btn-outline" onclick="shareTwitter()" style="width:auto;">Share X / Twitter</button>
+        <button class="btn btn-outline" onclick="shareWhatsApp()" style="width:auto;">Share WhatsApp</button>
+        <button class="btn btn-outline" onclick="copyLink()" style="width:auto;" id="copy-link-btn">Copy Link</button>
+      </div>
+      <!-- Hidden badge canvas -->
+      <canvas id="badgeCanvas" width="1080" height="1080" style="display:none;"></canvas>
+    </div>
+
+    <!-- Sources & Disclaimer -->
+    <div class="sources-section">
+      <div class="sources-toggle" onclick="this.querySelector('.toggle-icon').classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+        <h3>Sources & Disclaimer</h3>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="sources-content">
+        <ul>
+          <li>LinkedIn SEC Filings (pre-acquisition) and Microsoft Annual Reports — growth metrics, revenue data — <a href="https://www.microsoft.com/en-us/investor" target="_blank">microsoft.com/investor</a></li>
+          <li>LinkedIn Engineering Blog — growth experiments, feed ranking, network effects — <a href="https://engineering.linkedin.com/" target="_blank">engineering.linkedin.com</a></li>
+          <li>LinkedIn Economic Graph Research — labour market insights and platform data science</li>
+          <li>Reid Hoffman, Jeff Weiner, and Ryan Roslansky interviews — growth strategy and platform evolution</li>
+          <li>"Blitzscaling" by Reid Hoffman — network effects, growth metrics, and scaling strategies</li>
+          <li>LinkedIn's Growth Team public talks — Aatif Awan, Elliot Shmukler on viral loops and engagement metrics</li>
+          <li>Industry analyses from CB Insights, Gartner, and Forrester on professional networking and B2B SaaS growth</li>
+        </ul>
+        <div class="disclaimer-text">
+          <strong>Disclaimer:</strong> CXO Simulabs is an independent educational platform. LinkedIn and related marks are trademarks of LinkedIn Corporation This simulation is not affiliated with, endorsed by, or sponsored by LinkedIn Corporation All scenarios are inspired by publicly available information and may include dramatised elements for educational purposes. Dialogue attributed to individuals is fictional and does not represent actual statements. Financial figures are from public filings and published reports where available; some figures are approximations used for educational purposes. This is not a professional certification or accreditation.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- HUB NAV -->
+  <div class="hub-section">
+    <div class="hub-inner">
+      <h3>CPO Track — All Simulations</h3>
+      <p>Each simulation tests a different set of CPO competencies. Start anywhere.</p>
+      <div class="hub-grid">
+        <a href="https://mohansimham.github.io/CPO-SIM-1-Airbnb/" class="hub-card">
+          <div class="hw">SIM 1</div>
+          <div class="hco">Airbnb</div>
+          <div class="htopic">Strategic Thinking · Stakeholder Mgmt · Risk</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-2-Spotify/" class="hub-card">
+          <div class="hw">SIM 2</div>
+          <div class="hco">Spotify</div>
+          <div class="htopic">Business Model · Porter's Five Forces · OKRs</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-3-Netflix/" class="hub-card">
+          <div class="hw">SIM 3</div>
+          <div class="hco">Netflix</div>
+          <div class="htopic">Jobs-to-Be-Done · A/B Testing · User Research</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-4-Amazon/" class="hub-card">
+          <div class="hw">SIM 4</div>
+          <div class="hco">Amazon Prime</div>
+          <div class="htopic">RICE · MoSCoW · Kano Model</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-5-Uber/" class="hub-card">
+          <div class="hw">SIM 5</div>
+          <div class="hco">Uber</div>
+          <div class="htopic">Market Sizing · Unit Economics · 5 Whys</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-6-Zomato/" class="hub-card">
+          <div class="hw">SIM 6</div>
+          <div class="hco">Zomato</div>
+          <div class="htopic">RICE · MoSCoW · Kano · ICE Scoring</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-7-Slack/" class="hub-card">
+          <div class="hw">SIM 7</div>
+          <div class="hco">Slack</div>
+          <div class="htopic">Rapid Prototyping · MVP · Pivot Strategy</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-8-Google/" class="hub-card">
+          <div class="hw">SIM 8</div>
+          <div class="hco">Google</div>
+          <div class="htopic">PRDs · Design Docs · Launch Review</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-9-Meta/" class="hub-card">
+          <div class="hw">SIM 9</div>
+          <div class="hco">Meta</div>
+          <div class="htopic">AI Feature Design · ML Lifecycle · AI Safety</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-10-Shopify/" class="hub-card">
+          <div class="hw">SIM 10</div>
+          <div class="hco">Shopify</div>
+          <div class="htopic">Roadmapping · Prioritisation · Platform Evolution</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <a href="https://mohansimham.github.io/CPO-SIM-11-Duolingo/" class="hub-card">
+          <div class="hw">SIM 11</div>
+          <div class="hco">Duolingo</div>
+          <div class="htopic">Data Storytelling · Visualisation · Metrics</div>
+          <div class="hstatus status-available">→ Play now</div>
+        </a>
+        <div class="hub-card current-sim">
+          <div class="hw">SIM 12 · Current</div>
+          <div class="hco">LinkedIn</div>
+          <div class="htopic">Growth Loops · Retention · Network Effects</div>
+          <div class="hstatus status-done">✓ Completed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 CXO Simulabs · <a href="https://www.cxosimulabs.com">cxosimulabs.com</a> · <a href="https://www.cxosimulabs.com/privacy.html">Privacy</a> · <a href="https://www.cxosimulabs.com/terms.html">Terms</a></p>
+    <p style="margin-top:8px;font-size:.75em;color:#334455;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.6;">CXO Simulabs is an independent educational platform. LinkedIn and related marks are trademarks of LinkedIn Corporation This simulation is not affiliated with, endorsed by, or sponsored by LinkedIn Corporation Scenarios are inspired by publicly available information and may include dramatised elements for educational purposes. This is not a professional certification. All dialogue is fictional and does not represent actual statements by any named individual.</p>
+  </footer>
+</div>
+
+<script>
+// ─── FOUNDER MODE ─────────────────────────────────────────
+let _founderTaps=0, _founderTimer=null;
+function founderTap(){
+  _founderTaps++;
+  clearTimeout(_founderTimer);
+  _founderTimer=setTimeout(()=>_founderTaps=0,600);
+  if(_founderTaps>=3){ enterFounderMode(); _founderTaps=0; }
+}
+function enterFounderMode(){
+  Object.values(LS).forEach(k=>localStorage.removeItem(k));
+  state.name='Founder Preview';
+  state.email='founder@cxosimulabs.com';
+  state.currentAttempt=1;
+  // Badge
+  if(!document.getElementById('founder-badge')){
+    const b=document.createElement('div');
+    b.id='founder-badge';
+    b.style.cssText='position:fixed;bottom:16px;right:16px;background:#1a1a2e;color:#fff;padding:8px 16px;border-radius:8px;font-size:.78em;font-weight:600;z-index:9999;border:1px solid rgba(226,55,68,.4);cursor:pointer;';
+    b.innerHTML='🔧 Founder Preview &nbsp;<span style="color:#e23744;" onclick="exitFounderMode()">✕ Exit</span>';
+    document.body.appendChild(b);
+  }
+  document.getElementById('attempt-badge-display').textContent='🔧 Preview Mode';
+  showPhase('intro');
+}
+function exitFounderMode(){
+  const b=document.getElementById('founder-badge');
+  if(b) b.remove();
+  location.reload();
+}
+
+// ─── COMPETENCY MAP ───────────────────────────────────────
+const COMP_MAP = [
+  {name:'Growth Loops'},
+  {name:'North Star Metrics'},
+  {name:'Retention Analysis'},
+  {name:'Cohort Design'},
+  {name:'Experimentation'},
+  {name:'Network Effects'},
+  {name:'Monetisation Metrics'},
+  {name:'Virality & Activation'},
+  {name:'Funnel Optimisation'},
+  {name:'Unit Economics'},
+];
+
+// ─── CONFIG ───────────────────────────────────────────────
+const EJS_KEY      = 'ABWpMkWPOTsO_gQWG';
+const EJS_SERVICE  = 'service_a6x573k';
+const EJS_TEMPLATE = 'template_xt90q9j';
+emailjs.init(EJS_KEY);
+
+const LS = {
+  name:      'cxo_cpo12_name',
+  email:     'cxo_cpo12_email',
+  attempts:  'cxo_cpo12_attempts',
+  scores:    'cxo_cpo12_scores',
+};
+
+// ─── STATE ────────────────────────────────────────────────
+let state = {
+  name:'', email:'',
+  otp:'', otpExpiry:0, otpAttempts:0,
+  timerInterval:null,
+  currentAttempt:1,
+  currentQ:0,
+  answers:[],
+  totalScore:0, maxScore:0,
+};
+
+// ─── QUESTIONS ────────────────────────────────────────────
+const Q = {
+  1: [
+    {
+      scenario:`2008 — LinkedIn's "5 Connections in 7 Days" Discovery\n\nLinkedIn's growth team is analysing retention data and discovers a striking pattern: users who add at least 5 connections within their first week have 3x higher D30 retention than users who add fewer. The data is clear across every cohort and geography.\n\nBut there's a debate: is this correlation or causation? Do motivated users naturally add 5 connections AND retain better (selection bias)? Or does reaching 5 connections actually cause higher retention by making the feed and notifications more valuable?\n\nThe VP of Growth asks you to design the activation strategy. Your approach will shape LinkedIn's entire onboarding flow.`,
+      question:`How do you validate whether "5 connections" is truly the activation threshold?`,
+      options:[
+        {text:`Accept the correlation as sufficient evidence and redesign onboarding to push every user to 5 connections as fast as possible.`, score:2, feedback:`The 5-connection correlation is strong, but acting on correlation without testing causation is risky. If motivated users would retain regardless, you'll waste onboarding real estate pushing connections instead of helping users find value. LinkedIn did eventually redesign around this metric, but only after validating it wasn't pure selection bias.`},
+        {text:`Run an A/B test: one group gets the standard onboarding, the other gets an onboarding flow engineered to reach 5 connections faster (address book import, PYMK suggestions, company-based prompts). Compare D30 retention between groups.`, score:3, feedback:`This is the correct approach. By experimentally increasing the connection rate for a randomly assigned group and measuring retention, you can separate causation from correlation. If the engineered group retains better, the connections are causal. If they don't, motivated users were self-selecting. LinkedIn ran exactly this test and confirmed that reaching 5 connections causally improved retention — the feed became more relevant, notifications became more valuable, and the professional identity became worth maintaining.`},
+        {text:`Lower the threshold to 3 connections to make it easier for users to hit the activation target.`, score:1, feedback:`Lowering the threshold without evidence changes the goal, not the understanding. The data shows 5 connections is the inflection point. Making it 3 might mean users hit the target but don't actually get enough feed value to retain. The threshold should be set by data, not convenience. First validate the mechanism, then optimise the path to reach it.`},
+        {text:`Conduct qualitative interviews with retained and churned users to understand what drove their decisions, then use the insights to design onboarding.`, score:2, feedback:`Qualitative research adds valuable context — understanding why connections matter helps design better interventions. But interviews can't establish causation at scale. Users will post-rationalise their behaviour in ways that may not reflect the true driver. The best approach combines the A/B test (for causal evidence) with qualitative research (for design insights).`}
+      ],
+      competency:[2,4,7]
+    },
+    {
+      scenario:`2012 — Choosing LinkedIn's North Star Metric\n\nLinkedIn has grown to 160 million members. The company is about to go public, and the leadership team needs to align on a single North Star Metric (NSM) that will guide product decisions and investor communications.\n\nThree candidates are proposed:\n• Total registered members (currently 160M, growing 40% YoY)\n• Monthly Active Users / MAU (currently 48M, 30% of members)\n• Monthly sessions per active member (currently 8.2, growing slowly)\n\nThe CEO wants the metric that best predicts long-term business health. The CFO wants the one that tells the best investor story. The CPO wants one that product teams can actually influence.`,
+      question:`Which metric should LinkedIn adopt as its North Star?`,
+      options:[
+        {text:`Total registered members — it's the largest number and shows network scale, which is LinkedIn's competitive moat.`, score:1, feedback:`Registered members is a vanity metric. It only grows (people rarely delete accounts), so it always looks good but never tells you if the product is working. A network with 160M registered members and declining engagement is worth less than one with 50M highly active members. Investors eventually see through vanity metrics. LinkedIn's actual challenge in 2012 was engagement, not registration.`},
+        {text:`Monthly Active Users (MAU) — it measures real engagement, not just sign-ups, and can be decomposed into inputs teams can influence: activation rate × return rate × total members.`, score:3, feedback:`MAU is the right North Star because it sits at the intersection of all three needs. It reflects real value delivery (CEO), is large enough to impress investors while showing genuine health (CFO), and decomposes neatly into activation and retention metrics that product teams can own (CPO). LinkedIn did adopt engagement-based metrics as its North Star, focusing on making users come back regularly rather than just accumulating registrations.`},
+        {text:`Monthly sessions per active member — it's the hardest metric to game and shows how much value active users are actually getting.`, score:2, feedback:`Sessions per active member is a valuable depth metric, but it has a ceiling problem: LinkedIn isn't trying to be Instagram. Professional networking usage is naturally episodic — checking it 8 times a month might be the healthy optimum. Pushing for more sessions could lead to addictive dark patterns that don't serve professionals. It's better as an input metric to MAU than as the North Star itself.`},
+        {text:`Revenue per member — since LinkedIn is going public, the metric that matters most is how effectively the platform monetises its user base.`, score:1, feedback:`Revenue per member is a lagging indicator that product teams can't directly influence. By the time revenue changes, it's months after the product decisions that caused it. Revenue is a result of engagement, not a driver of it. Product teams need a North Star they can measure weekly and act on immediately. Revenue belongs in the CFO's dashboard, not the product team's.`}
+      ],
+      competency:[1,5,9]
+    },
+    {
+      scenario:`2013 — The "People You May Know" Viral Loop\n\nLinkedIn's "People You May Know" (PYMK) feature suggests connections based on shared employers, schools, and mutual connections. It's driving 50% of all new connections on the platform.\n\nThe growth team has data showing PYMK's viral coefficient:\n• Each new connection leads to an average of 0.6 additional connection requests\n• K-factor: 0.6 (below the viral threshold of 1.0, but still significant)\n• Users who engage with PYMK have 2.4x higher weekly active rates\n\nBut the team is debating: should they optimise PYMK for volume (maximise suggestions shown) or quality (maximise acceptance rate)?`,
+      question:`How should the growth team optimise People You May Know?`,
+      options:[
+        {text:`Optimise for volume — show more suggestions to more users more often. Even with lower acceptance rates, the sheer volume will generate more connections and push the K-factor toward 1.0.`, score:1, feedback:`Volume optimisation leads to spam fatigue. When users see irrelevant suggestions repeatedly, they stop engaging with PYMK entirely — and eventually stop opening LinkedIn. The acceptance rate drops, notification trust erodes, and the loop degrades. LinkedIn learned this lesson: unqualified connection suggestions were the #1 driver of notification opt-outs, which killed the entire re-engagement loop.`},
+        {text:`Optimise for acceptance rate — show fewer but higher-quality suggestions. A person you actually know generates a meaningful connection that makes the feed more relevant, which drives return visits, which creates more data for better suggestions.`, score:3, feedback:`This creates a compounding quality loop. High-quality suggestions → higher acceptance rate → more meaningful connections → better feed relevance → more return visits → more behavioural data → even better suggestions. LinkedIn's growth team found that optimising for acceptance rate actually generated more total connections over time than optimising for volume, because engaged users stayed on the platform longer and kept accepting suggestions. Quality compounds; volume decays.`},
+        {text:`Split the approach: show high-confidence suggestions (former colleagues, classmates) prominently, and lower-confidence suggestions (industry contacts) in a separate "Expand Your Network" section.`, score:2, feedback:`Segmenting by confidence is a thoughtful approach that acknowledges different intent levels. But it adds UI complexity and dilutes the core PYMK experience. The simpler approach — focus entirely on high-quality suggestions — gives the growth loop less friction and is easier to measure. The "Expand Your Network" section would likely have low engagement and distract from what works.`},
+        {text:`A/B test both approaches — run volume-optimised PYMK for 50% of users and quality-optimised for 50%, then measure which drives more long-term engagement.`, score:2, feedback:`A/B testing is the right instinct, but there's a network effects problem: PYMK is inherently networked. If you optimise volume for User A, the low-quality requests they send affect User B (in the quality group) who receives unwanted connection requests. This contaminates the control group. You'd need cluster-based randomisation (by geography or network cluster) to get clean results.`}
+      ],
+      competency:[0,5,7]
+    },
+    {
+      scenario:`2014 — LinkedIn's Feed Algorithm and Content Loop\n\nLinkedIn is shifting from a "connections-only" platform to a "content + connections" platform. The feed algorithm needs to decide: should it prioritise content from your connections (social graph) or content that's most engaging regardless of who posted it (interest graph)?\n\nThe data:\n• Connection-based feed: higher trust, but lower engagement (users scroll less)\n• Interest-based feed: higher engagement, but users complain about seeing strangers\n• A hybrid approach: 60% connection content / 40% interest content tests best in short-term engagement\n\nBut the growth team is worried about long-term effects. The interest graph drives engagement today but might weaken the reason to build connections — undermining LinkedIn's core growth loop.`,
+      question:`How do you balance the feed algorithm for long-term growth?`,
+      options:[
+        {text:`Go full interest-based (like TikTok) — maximise engagement now, which drives MAU growth, ad revenue, and content creator investment.`, score:1, feedback:`An interest-based feed destroys LinkedIn's competitive moat: the professional network. If content quality matters more than who you know, LinkedIn becomes a professional news site competing with Twitter and Medium. Users stop building connections (why bother?) and the core growth loop — connections drive engagement drives more connections — collapses. Short-term engagement gains mask long-term structural damage.`},
+        {text:`Maintain connection-first feed but use interest signals to rank connection content. The feed should feel like "your professional network, surfaced intelligently" — not "viral content from strangers."`, score:3, feedback:`This preserves the growth loop while improving the experience. When connections' content is ranked by relevance (not just recency), the feed becomes more valuable without breaking the reason to connect. Users still need connections to see good content, so the "connect → content → return → connect more" loop stays intact. LinkedIn eventually adopted this approach: your network is the filter, but relevance determines the order.`},
+        {text:`Use the 60/40 hybrid that tested best — it balances both approaches and the data supports it.`, score:2, feedback:`The 60/40 hybrid won in short-term A/B tests, but A/B tests can't measure the long-term effect on the growth loop. If 40% of your feed is from strangers, over time users may connect less because connections matter less for their feed. The metric to watch isn't 2-week engagement — it's 6-month connection growth and retention by cohort. Short-term experiment results can mislead on structural changes.`},
+        {text:`Let users choose their preference with a feed toggle: "My Network" vs. "Discover" — and let the market decide.`, score:1, feedback:`User choice sounds democratic but creates analysis paralysis and fragments the experience. Most users won't use a toggle — they'll default to whatever is preset. Meanwhile, you've doubled the surface area for feed ranking problems and can't optimise either experience fully. The best products make opinionated choices about their core experience rather than deferring to user toggles.`}
+      ],
+      competency:[0,2,5]
+    },
+    {
+      scenario:`2016 — Measuring LinkedIn Premium's True Incremental Value\n\nLinkedIn Premium (subscriptions for job seekers, recruiters, and sales professionals) generates $1.2B annually. But the analytics team discovers a troubling insight: 68% of Premium subscribers would likely have achieved their stated goal (finding a job, making sales contacts) using the free version.\n\nThe data:\n• Premium subscribers find jobs 23% faster than free users\n• But Premium subscribers are also 2.1x more active on the platform than average free users\n• When controlling for activity level, Premium only accelerates job-finding by 8%\n• Premium's NPS is 42 — decent but not exceptional\n\nThe VP of Product asks: is Premium actually delivering value, or are active users self-selecting into Premium and succeeding because they're active, not because they're Premium?`,
+      question:`How do you measure Premium's true incremental value?`,
+      options:[
+        {text:`Use the 23% faster job-finding metric — it's the observable outcome that matters for marketing and investor communications.`, score:1, feedback:`The 23% number includes selection bias. Active users who are highly motivated to find jobs both subscribe to Premium AND find jobs faster — but not because of Premium. Using this inflated number in marketing is defensible short-term but erodes trust when sophisticated customers or analysts spot the self-selection. Worse, it masks the real question: should we invest in making Premium actually more valuable, or just better at attracting motivated users?`},
+        {text:`Run a randomised trial: give a random sample of free users Premium features for 3 months and compare their outcomes to a matched control group. This isolates Premium's causal effect.`, score:3, feedback:`This is the gold standard for measuring incremental value. By randomly assigning Premium features, you eliminate self-selection bias. If the treatment group finds jobs 8% faster (matching the activity-controlled estimate), you know Premium's true value. This data is invaluable for three decisions: (1) how to price Premium, (2) which Premium features to invest in, (3) how to market it honestly. LinkedIn did run similar experiments to understand feature-level incrementality.`},
+        {text:`Focus on NPS (42) as the primary value metric — if subscribers say they like it, they're getting value.`, score:1, feedback:`NPS measures satisfaction, not incrementality. A subscriber might rate Premium highly because they found a job while subscribed — even if they would have found it anyway. NPS is useful for understanding sentiment but can't answer the question "would they have succeeded without Premium?" You need a causal experiment, not a survey, to measure true incremental value.`},
+        {text:`Analyse the 8% activity-controlled improvement and use regression analysis to identify which specific Premium features drive the incremental value.`, score:2, feedback:`The activity-controlled 8% estimate is better than the raw 23%, but regression can only control for observable variables. There may be unobservable differences (motivation, network quality, industry) that correlate with both subscribing and succeeding. Regression reduces bias but doesn't eliminate it. The randomised trial is cleaner. However, the feature-level analysis is valuable as a second step — once you've confirmed incremental value exists, identify which features drive it.`}
+      ],
+      competency:[4,6,9]
+    },
+    {
+      scenario:`2015 — LinkedIn's Engagement Notification Strategy\n\nLinkedIn sends 2.4 billion emails per month. These notification emails are the primary driver of return visits — 40% of all MAU are re-engaged through email. But the data science team has identified a paradox:\n\n• More email → more short-term return visits → higher MAU\n• BUT more email → higher unsubscribe rate → fewer reachable users over time\n• Users who unsubscribe from email have 85% lower 6-month retention\n\nThe current notification volume maximises 30-day MAU but is slowly shrinking the reachable user base. The growth team needs to find the optimal notification frequency that maximises lifetime value, not just next-month engagement.`,
+      question:`How do you optimise LinkedIn's notification frequency for long-term growth?`,
+      options:[
+        {text:`Maximise for 30-day MAU — it's the North Star metric and the most important number for investors and the board.`, score:1, feedback:`Maximising 30-day MAU by burning through your reachable user base is like burning furniture to heat the house. You'll be warm this month but frozen next year. Every user who unsubscribes is effectively churned — and 85% of them never come back. The 30-day MAU number will look great for 2-3 quarters, then cliff as the reachable base shrinks. This is a classic short-term vs. long-term trade-off.`},
+        {text:`Model the optimal notification frequency as a function of lifetime reachable MAU: find the frequency where (notification-driven return visits × user lifetime reachable months) is maximised, accounting for unsubscribe rates at each frequency level.`, score:3, feedback:`This is the correct mathematical framing. Instead of maximising this month's returns, you're maximising cumulative returns over the user's lifetime. The optimal frequency is lower than the MAU-maximising frequency because preserving the ability to reach users over years is more valuable than squeezing extra visits this month. LinkedIn's growth team built exactly this model and reduced notification volume by 40%, which decreased 30-day MAU by 5% but increased 12-month cumulative engagement by 22%.`},
+        {text:`Let users set their own notification preferences with a detailed control panel.`, score:2, feedback:`User controls are table stakes, but most users never change defaults. The users most likely to adjust settings are power users who would retain anyway. The users you're most at risk of losing (casual users) will just hit unsubscribe rather than finding a settings panel. The system needs to be smart by default, not just configurable.`},
+        {text:`Reduce all notification volume by 50% immediately to protect the reachable user base, then iterate from there.`, score:1, feedback:`A blanket 50% reduction is a blunt instrument. Some users are under-notified (high engagement, want more) and some are over-notified (low engagement, about to unsubscribe). The right answer isn't fewer notifications for everyone — it's personalised frequency based on each user's engagement level, notification response rate, and predicted unsubscribe risk.`}
+      ],
+      competency:[0,2,8]
+    },
+    {
+      scenario:`2017 — LinkedIn's Two-Sided Marketplace Metrics\n\nLinkedIn operates a two-sided marketplace for jobs: employers post jobs, candidates apply. The marketplace metrics show an imbalance:\n\n• Job postings: growing 35% YoY (supply)\n• Applications per posting: growing 60% YoY (demand)\n• But quality of applications (as rated by recruiters): declining 20% YoY\n• Time to fill a position: actually increasing despite more applications\n\nMore candidates are applying to more jobs (helped by Easy Apply), but the signal-to-noise ratio for recruiters is collapsing. Recruiters are drowning in unqualified applications. The marketplace is growing by volume metrics but degrading by quality metrics.`,
+      question:`Which metric should the jobs marketplace team prioritise?`,
+      options:[
+        {text:`Applications per posting — it's the liquidity metric that shows the marketplace is healthy. More applications give recruiters more choice.`, score:1, feedback:`More applications with declining quality is the marketplace equivalent of spam. Recruiters don't want more choice — they want better signal. Optimising for application volume led to Easy Apply being used indiscriminately, with candidates mass-applying to jobs they're not qualified for. The volume metric looks great in a dashboard but masks a degrading experience for the paying side (recruiters) of the marketplace.`},
+        {text:`"Qualified applications per posting" — redefine the marketplace health metric to measure signal quality, not noise volume. A qualified application is one where the candidate meets >70% of the stated requirements.`, score:3, feedback:`This reframes the entire marketplace around quality. When the success metric is qualified applications (not total applications), every feature decision changes: Easy Apply adds skill-matching gates, recommendations become smarter, and candidates are discouraged from mass-applying. Recruiters get fewer but better candidates. Time-to-fill decreases. And critically, recruiter retention improves — which drives the revenue side of the marketplace. LinkedIn eventually added qualification signals and application quality scoring for exactly this reason.`},
+        {text:`Time to fill — it's the ultimate outcome metric that both sides of the marketplace care about.`, score:2, feedback:`Time to fill is a valuable outcome metric but it's lagging (you only know it after the position is filled) and influenced by factors outside LinkedIn's control (interview processes, compensation negotiations, candidate availability). It's the right metric for quarterly business reviews but too slow for product teams to iterate on. You need a leading indicator that predicts time-to-fill improvement.`},
+        {text:`Recruiter NPS — the paying customers' satisfaction should be the primary metric.`, score:1, feedback:`Recruiter NPS is important but it's a composite of many factors (pricing, UI, support, candidate quality). You can't iterate on a product feature using NPS — it moves too slowly and is influenced by too many variables. NPS should be a guardrail metric, not the primary metric for the marketplace team.`}
+      ],
+      competency:[1,6,8]
+    },
+    {
+      scenario:`2019 — LinkedIn Learning's Engagement Crisis\n\nLinkedIn acquired Lynda.com for $1.5B and rebranded it as LinkedIn Learning. Three years in, the engagement data is concerning:\n\n• 16,000 courses available\n• 27M users have accessed at least one course\n• But only 11% complete any course they start\n• Average time-to-abandon: 23 minutes into a 2-hour course\n• Users who complete a course have 4.2x higher Premium retention\n\nThe product team is debating: should the North Star for LinkedIn Learning be "courses started" (top of funnel, shows reach) or "courses completed" (bottom of funnel, shows value delivery)?`,
+      question:`What should LinkedIn Learning's primary metric be?`,
+      options:[
+        {text:`Courses started — it shows LinkedIn Learning is reaching a broad audience and driving engagement with the content library.`, score:1, feedback:`"Courses started" is a vanity metric that looks good in executive reviews but masks the 89% abandonment problem. Starting a course requires minimal commitment — it's basically a click. If users consistently start but don't finish, the product isn't delivering value. Worse, optimising for "starts" incentivises clickbait titles and easy-to-find content rather than content that actually helps people learn.`},
+        {text:`Courses completed — it directly correlates with Premium retention (4.2x) and represents genuine value delivery to learners.`, score:2, feedback:`Course completion is a stronger signal of value, but it has a problem: not all "non-completion" is failure. A user who watches 3 specific videos from a 20-video course to solve a specific problem got full value without completing the course. Measuring only completion misses this legitimate use case. A better metric would capture value delivery more broadly.`},
+        {text:`"Learning hours that drive skill endorsements or career outcomes" — a compound metric that connects learning activity to LinkedIn's core professional value proposition. Track hours watched that lead to skill additions, endorsements, or job changes within 6 months.`, score:3, feedback:`This connects LinkedIn Learning back to LinkedIn's core value: career advancement. It's not just about watching videos — it's about learning that changes professional outcomes. This metric is harder to measure (requires connecting learning data to profile data to outcome data) but it answers the real question: is LinkedIn Learning helping professionals advance? It also prevents gaming (you can't fake a job promotion) and justifies the Premium price by tying it to career value.`},
+        {text:`Time spent on LinkedIn Learning per member per month — engagement time is the most common content platform metric.`, score:1, feedback:`Time spent is the worst metric for a learning platform. Unlike entertainment (where more time = more value), education should be efficient — a user who learns a skill in 30 minutes got more value than one who spent 2 hours on the same skill. Optimising for time spent incentivises long, padded courses rather than concise, effective learning. Time spent belongs on Netflix, not LinkedIn Learning.`}
+      ],
+      competency:[1,6,9]
+    },
+    {
+      scenario:`2020 — Measuring Network Effects Strength\n\nLinkedIn's strategy team needs to quantify the strength of LinkedIn's network effects for a board presentation. Network effects theory says the platform gets more valuable as more users join — but how do you actually measure this?\n\nThe data team has three proposed approaches:\n\n1. Correlation between user count and engagement (as members grow, does per-user engagement increase?)\n2. Marginal value of connections (does each additional connection add less or more value?)\n3. Competitive switching cost analysis (how hard is it for a user with N connections to leave LinkedIn?)\n\nThe board wants to know: are LinkedIn's network effects strengthening, weakening, or plateauing?`,
+      question:`How do you measure the strength of LinkedIn's network effects?`,
+      options:[
+        {text:`Method 1: Plot total members vs. engagement per member over time. If engagement increases as the network grows, network effects are present.`, score:1, feedback:`This conflates correlation with causation on a massive scale. Engagement might increase because the product improved, not because the network grew. A time-series correlation between members and engagement can't separate network growth effects from product improvement effects, marketing spend changes, or macro trends. You'd conclude that LinkedIn had strong network effects even if all the engagement growth came from a better feed algorithm.`},
+        {text:`Method 2: Measure marginal connection value — for a user with N connections, what engagement lift does the (N+1)th connection provide? Plot this curve. If marginal value is increasing or flat, network effects are strong. If it's decreasing rapidly, they're weakening.`, score:3, feedback:`This directly measures the mechanism of network effects: does adding another node to your personal network make the product more valuable? By controlling for the user and measuring the incremental engagement from each additional connection, you isolate the network effect from other factors. LinkedIn's data showed that marginal connection value was highest from connections 1-50 (strong network effects), moderate from 50-200, and near-zero above 500 — suggesting diminishing but positive returns. This insight informed PYMK's strategy: focus on helping users reach 50 quality connections, not 500.`},
+        {text:`Method 3: Measure switching costs — survey users on likelihood to switch to a competitor, segmented by connection count.`, score:2, feedback:`Switching costs are a consequence of network effects, not a measurement of them. Knowing that users with 200+ connections are unlikely to switch tells you the moat exists, but not whether it's growing or shrinking. It's a useful business metric (for competitive analysis and pricing) but doesn't answer the board's question about whether network effects are strengthening. It's a snapshot, not a trend.`},
+        {text:`Combine all three methods into a comprehensive "Network Effects Index" and present it as a single score.`, score:1, feedback:`Combining three measurements with different methodological strengths and weaknesses into a single index creates a number that's hard to interpret and easy to game. If the index goes up, which component drove it? If it goes down, which component is failing? Composite indices sacrifice clarity for comprehensiveness. The board needs to understand the mechanism (marginal connection value), not a black-box index.`}
+      ],
+      competency:[3,5,9]
+    },
+    {
+      scenario:`2018 — LinkedIn's Content Creator Growth Strategy\n\nLinkedIn wants to grow its content ecosystem. Currently:\n• 1% of members create original posts weekly ("creators")\n• 9% comment or react weekly ("engagers")\n• 90% only consume content ("lurkers")\n\nThe content team believes LinkedIn needs more creators to generate the content that keeps the feed valuable. They propose a "Creator Mode" with enhanced reach for content creators, analytics dashboards, and promotional features.\n\nBut the growth team argues that converting engagers to creators (9% → higher) is more impactful than building features for the existing 1% of creators.`,
+      question:`Where should LinkedIn invest to grow the content ecosystem?`,
+      options:[
+        {text:`Build Creator Mode for the existing 1% — give power creators tools to produce better content, grow their audiences, and stay on LinkedIn instead of moving to Twitter or Medium.`, score:2, feedback:`Retaining and empowering the top 1% is important — losing them would collapse the content supply. But the math is limited: even if you double output from 1% of members, you're still dependent on a tiny creator base. Creator Mode launched in 2021 and helped, but LinkedIn's content diversity problem required converting engagers to creators, not just amplifying existing ones.`},
+        {text:`Focus on converting the 9% engagers to creators by reducing the friction and psychological barriers to posting. Make the first post easy: "Share a career lesson you learned this year" with templates, prompts, and guaranteed initial distribution to their network.`, score:3, feedback:`This is the highest-leverage growth move. The 9% of engagers already have the habit of being on LinkedIn and engaging with content — they're one step away from creating. The barriers are psychological ("what do I have to say?") and mechanical ("how do I write a post?"). Guided prompts, templates, and guaranteed distribution to their network reduce both barriers. Converting even 2% of engagers to weekly creators would double LinkedIn's content supply. LinkedIn eventually launched similar features with "Start a post" prompts and article templates.`},
+        {text:`Focus on the 90% lurkers — they're the largest segment, so even a small conversion rate would have massive impact.`, score:1, feedback:`The math looks appealing (90% is a huge pool) but lurkers are lurkers for a reason — they don't have the engagement habit yet. Converting a lurker directly to a creator requires two behaviour changes (start engaging AND start creating). Converting an engager to a creator requires only one. In growth, always target the segment that's one step away from the desired behaviour, not three steps away.`},
+        {text:`Invest in AI-powered content creation tools that automatically generate draft posts from a user's profile updates, job changes, and skill milestones.`, score:2, feedback:`AI-assisted creation reduces mechanical friction but doesn't address the psychological barrier ("will people judge my post?"). Auto-generated content also risks feeling inauthentic, which could damage LinkedIn's content quality and trust. AI tools work best as assistants to motivated creators, not as replacements for unmotivated ones. This is a good secondary investment after the primary strategy of converting engagers.`}
+      ],
+      competency:[0,7,8]
+    }
+  ],
+  2: [
+    {
+      scenario:`2011 — LinkedIn's Pre-IPO Growth Accounting\n\nLinkedIn is preparing for its IPO and needs to present growth metrics that show sustainable, compounding growth. The finance team wants to present "total members" growth (simple, always up). The growth team wants to present a growth accounting framework that separates new user acquisition from resurrection, retention, and churn.\n\nGrowth accounting for LinkedIn's MAU:\n• New users activated this month: 5.2M\n• Resurrected users (previously churned, came back): 1.8M\n• Retained users (active last month, still active): 31M\n• Churned users (active last month, not this month): 4.6M\n• Net growth: +2.4M MAU\n\nThe VP of Growth argues this framework is essential for understanding whether growth is healthy or fragile.`,
+      question:`Which growth framework should LinkedIn present to investors?`,
+      options:[
+        {text:`Total members growth — it's the number investors expect from a social network, it's always positive, and it avoids exposing churn data that could spook the market.`, score:1, feedback:`Hiding churn data from investors is a short-term strategy that backfires. Sophisticated investors will ask about engagement metrics anyway, and if your S-1 only shows total members, analysts will assume you're hiding something. LinkedIn's IPO was successful partly because the company was transparent about engagement, not just registration. Trust is built by showing the full picture, not the flattering picture.`},
+        {text:`Growth accounting (new + resurrected - churned = net growth), alongside total members. Show that net growth is positive and accelerating, that new user acquisition exceeds churn, and that the resurrection rate proves the product has lasting value even for churned users.`, score:3, feedback:`Growth accounting is the sophisticated choice that builds investor confidence. It shows LinkedIn understands its own growth dynamics: acquisition (5.2M) far exceeds churn (4.6M), and resurrection (1.8M) proves that churned users still see value in returning. The narrative becomes: "Our growth is structurally healthy — we add more than we lose, and even our losses are partially recoverable." This framework also gives the company credibility to discuss challenges honestly.`},
+        {text:`Focus on engagement metrics (MAU, DAU/MAU ratio, sessions per user) and de-emphasise user count entirely.`, score:2, feedback:`Engagement metrics are important but investors in 2011 still expected user growth numbers from social networks. Skipping user count entirely would seem evasive. The best IPO narratives pair growth metrics (proving scale) with engagement metrics (proving depth). LinkedIn needs to show it's big AND that users are genuinely engaged — not just one or the other.`},
+        {text:`Present cohort-level retention curves showing how each quarterly cohort retains over time, demonstrating that the product creates long-term habits.`, score:2, feedback:`Cohort retention curves are analytically superior to aggregate metrics, but they're complex for a general investor audience. Most IPO investors aren't data scientists — they need the story before the methodology. Cohort curves belong in the detailed S-1 filing and analyst deep-dive sessions, not the roadshow deck headline. Lead with growth accounting (simple, compelling), support with cohort data (rigorous, available on request).`}
+      ],
+      competency:[1,3,9]
+    },
+    {
+      scenario:`2016 — LinkedIn's Acquisition by Microsoft: Metrics Integration\n\nMicrosoft is acquiring LinkedIn for $26.2B. The integration team needs to define success metrics for the acquisition. LinkedIn's current North Star is MAU growth and engagement. Microsoft wants to measure "synergy value" — the additional value created by combining LinkedIn with Microsoft products (Office 365, Outlook, Dynamics CRM).\n\nProposed synergy metrics:\n• LinkedIn profile cards appearing in Outlook: X million impressions/month\n• Resume Assistant (LinkedIn data in Word): Y million uses/month\n• LinkedIn data enriching Dynamics CRM contacts: Z million records/month\n• Cross-platform daily active users (using both LinkedIn and a Microsoft product): W million\n\nThe integration PM needs to choose a North Star for the combined entity.`,
+      question:`What should the integration team's North Star metric be?`,
+      options:[
+        {text:`Cross-platform daily active users — people using both LinkedIn and a Microsoft product in the same day. This directly measures integration success.`, score:3, feedback:`This is the best North Star because it measures the fundamental hypothesis of the acquisition: that combining LinkedIn and Microsoft creates value neither could create alone. If cross-platform DAU grows, it means users are finding value in the integration. It's decomposable (which Microsoft products? which LinkedIn features?), actionable (build integrations that increase it), and directly tied to the synergy thesis that justified $26.2B. It also avoids the trap of measuring activity in LinkedIn OR Microsoft separately.`},
+        {text:`LinkedIn MAU — keep LinkedIn's existing North Star and treat the Microsoft integration as an input to it.`, score:2, feedback:`Preserving LinkedIn's North Star protects against the common acquisition mistake of disrupting what works. But it doesn't capture the synergy value that justified the premium. LinkedIn's MAU could grow for reasons entirely unrelated to Microsoft integration. If the board is evaluating whether the $26.2B acquisition created value, LinkedIn's standalone MAU doesn't answer the question.`},
+        {text:`Revenue synergies — track the incremental revenue generated by Microsoft-LinkedIn integrations (Sales Navigator in Dynamics, LinkedIn ads from Microsoft data).`, score:2, feedback:`Revenue is the ultimate proof of synergy, but it's a lagging indicator that takes 18-24 months to materialise. The integration team needs a leading indicator they can measure weekly and act on. Revenue synergies should be the 2-year success metric, but the team needs a proxy metric for the first 6 months of integration work.`},
+        {text:`Total integration touchpoints — the number of places where LinkedIn data or features appear in Microsoft products, measuring the breadth of integration.`, score:1, feedback:`Counting touchpoints measures activity (how busy the integration team is) not outcome (whether integrations create value). You could add LinkedIn data to 50 Microsoft surfaces and still create zero value if none of those integrations are useful. Output metrics that measure "how much we built" are the opposite of what you need — you need outcome metrics that measure "how much value we created."`}
+      ],
+      competency:[1,5,6]
+    },
+    {
+      scenario:`2020 — LinkedIn's COVID Growth Surge Analysis\n\nCOVID-19 causes massive disruption to the professional world. LinkedIn sees dramatic metric shifts:\n\n• Job postings: dropped 45% (employers froze hiring)\n• Member sign-ups: increased 28% (professionals worried about job security)\n• Content engagement: increased 55% (people consuming more professional content)\n• LinkedIn Learning usage: increased 130% (upskilling during lockdown)\n• Premium subscriptions: dropped 15% (people cancelling paid products)\n\nThe metrics paint a contradictory picture: engagement is surging but the business model (jobs + subscriptions) is hurting. The board asks: is LinkedIn's business getting stronger or weaker?`,
+      question:`How do you assess LinkedIn's business health during COVID?`,
+      options:[
+        {text:`Focus on the engagement surge (sign-ups +28%, content +55%, Learning +130%) — these are leading indicators that will eventually drive business recovery.`, score:2, feedback:`Engagement growth is genuinely positive and does suggest future business health. But "eventually" doesn't pay the bills this quarter. The board needs to understand the timeline: how long until engagement converts to revenue? Without connecting the engagement surge to a business recovery model, this answer is optimistic but not analytical.`},
+        {text:`Segment the metrics into leading (engagement, sign-ups, content) and lagging (jobs, subscriptions, revenue) indicators. Present the thesis: "Lagging indicators are down due to macro conditions, but leading indicators are at all-time highs. When hiring resumes, we'll have a larger, more engaged user base to monetise. Here's the model showing projected recovery timeline based on historical lag between engagement and revenue."`, score:3, feedback:`This is the sophisticated analytical framework the board needs. By separating leading from lagging indicators, you explain the paradox: the business looks weak on trailing metrics but strong on leading metrics. The recovery model (connecting engagement growth to projected revenue recovery) gives the board confidence that this isn't wishful thinking — it's a data-backed prediction. LinkedIn's actual recovery followed this pattern: engagement gains during COVID translated to record revenue 6-9 months after hiring resumed.`},
+        {text:`Present the job posting decline (-45%) and subscription drop (-15%) as the critical metrics — they're the revenue drivers and the board needs to see the plan to reverse them.`, score:1, feedback:`Leading with the negative metrics without context creates panic. The job posting decline is an industry-wide macro event, not a LinkedIn-specific problem. Presenting it as "our crisis" rather than "the market's crisis that we're positioned to recover from" misses the strategic picture. The board needs to understand that LinkedIn's engagement surge positions it to capture disproportionate value when hiring resumes.`},
+        {text:`Propose changing LinkedIn's North Star from engagement-based to revenue-based during the crisis, since revenue is what's under pressure.`, score:1, feedback:`Changing your North Star during a crisis is the worst possible time. Teams need stability and clarity when the market is chaotic. A revenue-based North Star during a hiring freeze would lead to desperate short-term monetisation tactics (more ads, more paywalls, more spam) that damage the engagement gains you're building. Stay focused on the metrics you can control (engagement, content, learning) and trust that they'll convert to revenue when the market recovers.`}
+      ],
+      competency:[1,3,9]
+    },
+    {
+      scenario:`2021 — LinkedIn's Creator Fund Dilemma\n\nLinkedIn is considering launching a Creator Fund — paying top content creators directly to post on LinkedIn, similar to programmes at TikTok, YouTube, and Twitter.\n\nThe growth team models the economics:\n• Proposed fund: $25M/year for top 1,000 creators\n• Average payment: $25K/year per creator\n• Expected content output increase: 40% more posts from funded creators\n• Expected engagement lift: 12% more feed engagement from better content\n• Expected MAU impact: 2-3% MAU increase from improved content quality\n\nBut the economics team raises a concern: the 2-3% MAU increase from a $25M investment translates to $120 per incremental MAU — far more expensive than organic growth ($8/MAU) or paid marketing ($35/MAU).`,
+      question:`Should LinkedIn launch the Creator Fund?`,
+      options:[
+        {text:`Launch it — the content ecosystem needs investment, and $25M is small relative to LinkedIn's $10B+ revenue.`, score:1, feedback:`"It's a small amount" is not a strategy. Every dollar has an opportunity cost. If $25M spent on creator payments generates 2-3% MAU growth at $120/MAU, but the same $25M in product improvements could generate 5-8% growth at $35/MAU, the Creator Fund is a bad investment. Size relative to revenue doesn't matter — ROI does.`},
+        {text:`Don't launch. The unit economics are poor ($120/MAU vs. $8 organic). Instead, invest the $25M in product features that reduce friction for the 9% of engagers to become creators — a higher-leverage approach that creates a self-sustaining content loop rather than a paid dependency.`, score:3, feedback:`This is the right analysis. Creator Funds create a paid dependency: if you stop paying, creators stop posting (as TikTok and Twitter discovered). Product improvements that convert engagers to creators build a self-sustaining loop that compounds forever. The $25M invested in creation tools, templates, guaranteed distribution for first-time posters, and AI writing assistance could convert 2-3% of the 9% engager base to creators — a much larger and more sustainable content supply increase than paying 1,000 influencers.`},
+        {text:`Launch a smaller pilot ($5M, 200 creators) to test whether paid content actually drives the projected engagement and MAU gains before committing the full $25M.`, score:2, feedback:`A pilot is a reasonable de-risking strategy, but it doesn't address the fundamental unit economics problem. Even if the pilot confirms the 12% engagement lift, the cost-per-incremental-MAU is still $120 — and it doesn't become cheaper at scale (you'd need to pay more creators, not fewer). The pilot would confirm the effect while ignoring the efficiency question. Better to pilot the product-led approach (which has better unit economics) than to pilot the more expensive approach.`},
+        {text:`Launch the Creator Fund but tie payments to outcomes (engagement generated, not posts published) to improve unit economics.`, score:2, feedback:`Outcome-based payments are more efficient than flat payments, but they create perverse incentives. Creators paid per engagement will optimise for clicks (controversy, hot takes, outrage) rather than quality professional content. LinkedIn's content quality — thoughtful professional insights rather than viral outrage — is a competitive advantage. Paying for engagement would erode it. The incentive design problem is as important as the unit economics problem.`}
+      ],
+      competency:[0,6,9]
+    },
+    {
+      scenario:`2022 — LinkedIn's Freemium Conversion Funnel\n\nLinkedIn's freemium model has three paid tiers:\n• Premium Career ($30/mo) — for job seekers\n• Premium Business ($60/mo) — for networking and insights\n• Sales Navigator ($80/mo) — for sales professionals\n\nThe conversion funnel data:\n• Free → Trial: 8% of eligible users start a free trial\n• Trial → Paid: 34% convert after the trial period\n• Paid → Renew (month 2): 78%\n• Paid → Renew (month 6): 52%\n• Paid → Renew (month 12): 38%\n\nThe 38% annual retention means LinkedIn replaces 62% of its subscriber base every year. The VP of Subscriptions calls it a "leaky bucket" and asks you to diagnose where the biggest leverage point is.`,
+      question:`Where is the highest-leverage point in the subscription funnel?`,
+      options:[
+        {text:`Free → Trial (8%) — this is the top of funnel with the largest absolute numbers. Even a small improvement in trial starts would generate massive downstream revenue.`, score:2, feedback:`The top of funnel has scale advantages, but the 8% trial start rate may be close to optimal — only 8% of free users have a strong enough need to try Premium. Pushing more users into trials who don't have a genuine need will lower the Trial → Paid conversion rate. You'd be filling the top of a leaky bucket. The highest-leverage point is usually where the most qualified users are being lost, not where the most users exist.`},
+        {text:`Month 6 → Month 12 retention (52% → 38%) — this is where the biggest absolute drop happens and where users have already demonstrated willingness to pay. Understanding why 14% of 6-month subscribers leave between months 6-12 is the highest-value diagnostic.`, score:3, feedback:`This is the highest-leverage point for three reasons: (1) These users have already proven willingness to pay — they're the highest-quality segment. (2) The marginal cost of retaining an existing subscriber is far lower than acquiring a new one. (3) The 52% → 38% drop suggests the product is losing value over time for subscribers. Diagnosing why (job found? feature fatigue? competitor?) reveals whether this is a product problem or a natural lifecycle. LinkedIn's analysis found that job seekers churned after finding a job (natural) but business users churned because they couldn't see ongoing ROI (fixable).`},
+        {text:`Trial → Paid (34%) — two-thirds of trial users don't convert. They experienced the product for free and decided it wasn't worth paying for. This is a product-market fit signal.`, score:2, feedback:`34% trial-to-paid is actually strong for a B2C freemium product (industry average is 15-25%). Trying to push it much higher might mean you're letting in less-qualified trial users or using dark patterns. The 34% conversion rate may indicate that the trial is working correctly — filtering out users who don't have a strong enough need. However, understanding the 66% who don't convert is still valuable for product insights.`},
+        {text:`Free → Trial (8%) with better targeting — use ML to identify the free users most likely to convert and only show them trial offers. This improves efficiency and trial quality simultaneously.`, score:2, feedback:`ML-targeted trial offers are a solid optimisation technique, but they're a tactical improvement to an existing funnel, not a strategic diagnosis of the biggest problem. The VP asked where the biggest leverage point is — better targeting at the top of funnel won't fix the fact that 62% of subscribers churn annually. You need to fix the leaky bucket before you pour more water in.`}
+      ],
+      competency:[2,6,8]
+    },
+    {
+      scenario:`2015 — Measuring the Value of "Weak Ties" on LinkedIn\n\nSociologist Mark Granovetter's "Strength of Weak Ties" theory suggests that professional opportunities (jobs, partnerships, deals) come disproportionately from weak ties (acquaintances) rather than strong ties (close colleagues). LinkedIn's network is ideal for testing this theory at scale.\n\nThe data science team has initial findings:\n• Strong ties (frequent messaging, mutual engagement): 12% of connections\n• Weak ties (connected but rarely interact): 88% of connections\n• Job referrals from strong ties: 8% success rate\n• Job referrals from weak ties: 3% success rate per referral, but 5x more referrals sent\n• Net: weak ties generate 2x more successful job placements than strong ties\n\nThe product question: should LinkedIn help users strengthen their weak ties (making them stronger) or accumulate more weak ties (expanding the network)?`,
+      question:`How should LinkedIn leverage the weak ties insight for product strategy?`,
+      options:[
+        {text:`Help users strengthen weak ties — re-engage dormant connections through "catch up" features, automated check-ins, and context about what weak ties have been doing since you last interacted.`, score:2, feedback:`Strengthening weak ties sounds helpful, but it changes their nature. The power of weak ties is precisely that they're weak — they move in different professional circles and have non-overlapping information. Making them stronger (more interaction, more alignment) actually reduces their value by making their information more redundant with your strong ties. The theoretical insight is that weak ties should stay weak but accessible.`},
+        {text:`Optimise for weak tie volume and accessibility — make it easy to accumulate weak connections and to reach out to them when needed (not constantly). Features like "Who in my network works at [company]?" or "Who can introduce me to [person]?" leverage weak ties without requiring ongoing engagement.`, score:3, feedback:`This nails the insight. Weak ties are valuable not because you interact with them frequently, but because they're accessible when you need them. The product strategy should make it easy to build a large, diverse network AND to activate those connections at the moment of need. Search, introductions, and "Who knows who" features make the weak tie network useful without requiring the overhead of maintaining relationships. This is exactly why LinkedIn's connection model (low-cost to connect, rich profile data to search) works.`},
+        {text:`Build features that help users identify which weak ties are most valuable — rank connections by career relevance, industry proximity, and seniority level.`, score:2, feedback:`Ranking weak ties by value adds useful signal, but it presumes you know when you'll need a connection. The job opportunity from a weak tie is often serendipitous — the connection you ranked low turns out to be the one who knows about the perfect opportunity. Over-optimising for "valuable" ties reduces the serendipity that makes weak tie networks powerful. Sometimes the most valuable connection is the one you least expect.`},
+        {text:`Focus on strong ties — the 8% success rate per referral is much higher than the 3% for weak ties. Quality over quantity.`, score:1, feedback:`This misreads the data. While strong ties have a higher per-referral success rate (8% vs. 3%), weak ties generate 5x more referrals, resulting in 2x more total successful placements. In network economics, volume × conversion often beats conversion alone. LinkedIn's 800M-member network is valuable precisely because it's mostly weak ties — it would be impossible to maintain 800M strong ties. The scale of weak ties IS the product.`}
+      ],
+      competency:[3,5,7]
+    },
+    {
+      scenario:`2023 — LinkedIn's AI-Powered "Collaborative Articles" Experiment\n\nLinkedIn launched "Collaborative Articles" — AI-generated article stubs that members can contribute to, adding their professional expertise. It's a growth experiment designed to drive SEO traffic and member contributions.\n\nAfter 6 months:\n• 10M collaborative articles created (AI-generated)\n• 500K members contributed at least one answer\n• Google organic traffic: increased 22% from collaborative article pages\n• But member-contributed answers average only 47 words (vs. 280 for regular LinkedIn articles)\n• 72% of AI-generated articles have zero member contributions\n• Members who contribute have 1.3x higher return rate\n\nCritics call it "AI spam." The growth team calls it "a content flywheel in its early stage."`,
+      question:`How do you evaluate the Collaborative Articles experiment?`,
+      options:[
+        {text:`It's working — 22% organic traffic growth is massive. The low contribution rate and short answers will improve as the feature matures. Keep scaling.`, score:1, feedback:`The 22% traffic growth is real, but traffic without engagement is a vanity metric. If 72% of articles have zero contributions, those pages are pure AI content ranking in Google — which violates Google's helpful content guidelines and creates brand risk. "It will improve as it matures" is hope, not strategy. You need to define what "working" looks like before scaling.`},
+        {text:`Define a compound success metric: "(Articles with 3+ quality contributions) × (return visit rate from those articles)." This measures the flywheel — content that's genuinely human-enhanced AND that drives repeat engagement. Evaluate the experiment against this metric, not raw article count or traffic.`, score:3, feedback:`This is the right evaluation framework. It separates the signal (articles where humans add real value that brings people back) from the noise (AI articles with zero contributions that generate empty traffic). The compound metric reveals the true flywheel efficiency: how much human expertise are you generating, and does it create a loop? If only 28% of articles get contributions and the return rate is modest, the flywheel is spinning slowly. You now have a clear metric to optimise: increase contribution rate and contribution quality.`},
+        {text:`Kill the experiment — 72% of articles with zero contributions and 47-word average answers means this is an AI content farm, not a professional knowledge platform. It risks LinkedIn's brand.`, score:2, feedback:`The brand risk is real, and the quality metrics are concerning. But killing the experiment entirely throws away the signal along with the noise. The 28% of articles that DO get contributions, and the 500K members who contributed, represent a real behaviour. The right move is to dramatically reduce the AI article volume (quality over quantity), invest in the contribution experience, and set quality thresholds — not abandon the entire approach.`},
+        {text:`Pivot to a "member-first" model: instead of AI generating articles for members to enhance, let members write articles and use AI to enhance them with data, citations, and structure.`, score:2, feedback:`Flipping the model to member-first is a reasonable pivot, but it changes the fundamental growth hypothesis. The original thesis was that AI articles could scale content supply infinitely and human contributions would make them valuable (SEO → traffic → contributions → better content → more SEO). A member-first model is a different product with different economics. Before pivoting, optimise the current model — the 28% of articles getting contributions suggest the thesis is partially working.`}
+      ],
+      competency:[0,4,7]
+    },
+    {
+      scenario:`2019 — LinkedIn's Unit Economics by Segment\n\nLinkedIn's finance team has completed a unit economics analysis across user segments:\n\n• Free members: Cost to serve $0.50/month. Ad revenue: $0.35/month. Net: -$0.15/month\n• Premium Career: Revenue $30/month. Cost $2.50/month. Net: +$27.50/month. But average lifetime: 4.2 months\n• Premium Business: Revenue $60/month. Cost $3.80/month. Net: +$56.20/month. Average lifetime: 8.1 months\n• Sales Navigator: Revenue $80/month. Cost $5.20/month. Net: +$74.80/month. Average lifetime: 14.3 months\n• Recruiter: Revenue $120/month. Cost $8.50/month. Net: +$111.50/month. Average lifetime: 11.7 months\n\nFree members are individually unprofitable but create the network that premium members pay for. The question is: what's the true value of a free member?`,
+      question:`How do you calculate the true economic value of a free LinkedIn member?`,
+      options:[
+        {text:`Free members are worth -$0.15/month (cost minus ad revenue). That's the direct unit economics. Invest in converting them to premium faster.`, score:1, feedback:`This ignores the most important thing about a platform business: indirect value. Free members create the profiles that appear in recruiter searches ($120/month). They write the content that keeps premium members engaged. They accept connection requests that make Sales Navigator valuable. Valuing free members at -$0.15/month is like valuing a shopping mall's foot traffic at zero — it misses the entire business model.`},
+        {text:`Calculate free member value as: (probability of converting to premium × lifetime premium revenue) + (ad revenue) + (network effect contribution — the incremental engagement their presence creates for premium members, pro-rated across the premium subscriber base).`, score:3, feedback:`This captures all three value streams of a free member: (1) Direct conversion potential (some will upgrade), (2) Direct monetisation (ad revenue), and (3) Network effect contribution (their profile, content, and connections make the platform more valuable for everyone, including premium members). The third component is the hardest to measure but the most important. LinkedIn's data science team estimated that each free member adds approximately $2.40/month in indirect value to the platform through network effects — making them net positive despite the -$0.15 direct economics.`},
+        {text:`Use the LTV of converted members: if 3% of free members eventually convert to Premium Career with a 4.2-month lifetime, the expected value of a free member is 0.03 × $30 × 4.2 = $3.78.`, score:2, feedback:`This captures the conversion value but misses two critical components: ad revenue from the 97% who never convert, and the network effect value. The 97% of members who stay free forever aren't worthless — they're the reason recruiters pay $120/month and sales professionals pay $80/month. A model that only values free members by their premium conversion probability undervalues the platform by 60-70%.`},
+        {text:`Don't calculate individual free member value — it's a platform, and value is emergent from the network, not attributable to individual users.`, score:1, feedback:`While it's true that platform value is emergent, "we can't measure it" isn't an acceptable answer for a public company. The finance team needs unit economics to make investment decisions: how much should we spend to acquire a free member? If we can't quantify their value, we can't set a rational CAC target. The answer isn't to avoid the calculation — it's to build a model that captures direct and indirect value, even if the indirect estimates have uncertainty.`}
+      ],
+      competency:[6,8,9]
+    },
+    {
+      scenario:`2021 — LinkedIn's "Great Resignation" Opportunity\n\nThe "Great Resignation" is driving record job mobility. LinkedIn sees:\n\n• Job postings: +83% YoY (all-time high)\n• "Open to Work" banner adoption: 22M members\n• Profile updates (signalling job search): +44% YoY\n• InMail response rates from recruiters: dropped from 18% to 11% (recruiters are spamming)\n• Recruiter subscription churn: increased 8% (frustrated with low response rates)\n\nThe paradox: the job market is booming (great for LinkedIn's business) but recruiter experience is degrading (threatening LinkedIn's highest-revenue product). The platform is experiencing growth that could undermine its most valuable customer segment.`,
+      question:`How do you balance the opportunity of the Great Resignation with recruiter experience degradation?`,
+      options:[
+        {text:`Prioritise job seeker experience — they're the growing segment and their activity drives the platform's relevance during this market moment.`, score:1, feedback:`Job seekers are important but they're not the paying customers for LinkedIn's highest-revenue product. If recruiter churn accelerates from 8% to 15% because InMail response rates keep dropping, LinkedIn loses its most profitable segment. The Great Resignation is temporary (job markets cycle), but lost recruiter relationships are hard to rebuild. You need to serve both sides.`},
+        {text:`Implement a matching quality layer: rate-limit recruiter InMails to prevent spam, improve matching algorithms so recruiters reach relevant candidates, and add candidate preference signals so "Open to Work" members can specify what they're looking for. Measure success via InMail response rate (target: restore to 15%+) and recruiter retention.`, score:3, feedback:`This addresses the root cause: the declining InMail response rate is a signal-to-noise problem, not a volume problem. By improving match quality and rate-limiting spam, you make each InMail more valuable — recruiters get better responses, candidates get more relevant outreach, and the marketplace functions better. The target metric (InMail response rate) is the perfect health metric because it measures both recruiter quality and candidate satisfaction simultaneously. LinkedIn did implement recruiter guidance and matching improvements to address this exact problem.`},
+        {text:`Raise recruiter subscription prices to capture the increased demand — the Great Resignation means recruiters need LinkedIn more than ever.`, score:1, feedback:`Raising prices during a period of degrading experience is a recipe for churn acceleration. Recruiters are already frustrated with low response rates. If you also raise prices, you're charging more for a worse product. Price increases work when value is increasing, not decreasing. Fix the experience first, then the pricing power follows naturally.`},
+        {text:`Launch a "Premium Job Seeker" product that charges candidates for enhanced visibility to recruiters, creating a new revenue stream from the Great Resignation demand.`, score:1, feedback:`Charging job seekers for visibility creates a two-tier marketplace where wealthy candidates get seen and others don't — which undermines LinkedIn's mission of "connecting professionals to opportunity." It also signals to job seekers that the free product doesn't work, which damages trust. The better monetisation path is making the recruiter product more effective (higher value → higher willingness to pay), not extracting money from the supply side.`}
+      ],
+      competency:[0,5,8]
+    },
+    {
+      scenario:`2023 — LinkedIn's Engagement Quality vs. Quantity Debate\n\nLinkedIn's feed algorithm has been optimised for engagement (likes, comments, shares) for years. But a new analysis reveals concerning patterns:\n\n• Posts with emotional/controversial content get 3.2x more engagement than educational content\n• "Broetry" posts (short motivational stories with excessive line breaks) get 2.8x more likes than long-form professional insights\n• But users who primarily engage with educational content have 1.7x higher Premium conversion\n• And users who primarily see controversial content have 1.4x higher churn rate\n\nThe algorithm that maximises engagement today is selecting for content that reduces long-term business value. The head of engineering asks: should we change the algorithm?`,
+      question:`How do you redefine the feed algorithm's optimisation target?`,
+      options:[
+        {text:`Keep optimising for engagement — it's the proven metric that drives MAU, and MAU drives revenue. Changing the algorithm is too risky.`, score:1, feedback:`Optimising for engagement when you have evidence it's driving churn is like a restaurant optimising for table turnover when it's driving bad reviews. The metric served you well historically, but the data now says it's counter-productive. Continuing to optimise for engagement while knowing it increases churn by 1.4x is choosing short-term metrics over long-term business health.`},
+        {text:`Create a composite metric: "Valuable Engagement" = (engagement actions) × (content quality score) × (predicted long-term retention impact). Optimise the algorithm for this compound metric instead of raw engagement.`, score:3, feedback:`This is the sophisticated answer. Rather than choosing between engagement and quality, you create a metric that captures both. A "broetry" post that gets 500 likes but drives no Premium conversions and predicts higher churn would score lower than an educational post that gets 200 likes but drives Premium interest and predicts retention. The compound metric aligns the algorithm with long-term business value while still rewarding genuine engagement. LinkedIn eventually implemented similar "quality of engagement" signals in their feed ranking.`},
+        {text:`Manually suppress controversial and "broetry" content by adding content policies and enforcing a more professional tone.`, score:1, feedback:`Content moderation through policy is a blunt instrument that's expensive to enforce and alienates creators. Defining what counts as "too emotional" or "too many line breaks" requires subjective human judgement at scale. It's better to let the algorithm learn what content drives long-term value (through the compound metric) than to manually police content style. Policy-based approaches create censorship complaints; algorithm-based approaches are invisible and data-driven.`},
+        {text:`Show users a mix of content types regardless of engagement: 50% from connections, 25% educational, 25% trending. Override the algorithm with fixed proportions.`, score:1, feedback:`Fixed content proportions ignore that different users want different things. A recruiter wants job market insights. A developer wants technical tutorials. A marketer wants case studies. A fixed mix serves no one well. The algorithm should be personalised but optimised for the RIGHT metric (long-term value), not hobbled with fixed proportions that ignore individual preferences.`}
+      ],
+      competency:[0,2,4]
+    }
+  ]
+};
+// ─── PHASE MANAGEMENT ─────────────────────────────────────
+function showPhase(id){
+  document.querySelectorAll('.phase').forEach(p=>p.classList.remove('active'));
+  document.getElementById('phase-'+id).classList.add('active');
+  window.scrollTo(0,0);
+}
+
+// ─── ON LOAD ──────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded',()=>{
+  const params = new URLSearchParams(location.search);
+
+  // ?reset=true — clears attempt count
+  if(params.get('reset')==='true'){
+    Object.values(LS).forEach(k=>localStorage.removeItem(k));
+    location.href=location.pathname;
+    return;
+  }
+
+  // ?preview=true — founder mode: no email gate, no attempt limit
+  if(params.get('preview')==='true'){
+    state.name  = 'Preview Mode';
+    state.email = 'preview@cxosimulabs.com';
+    state.currentAttempt = 1;
+    // Show a small founder banner
+    const banner = document.createElement('div');
+    banner.style.cssText='position:fixed;bottom:16px;right:16px;background:#1a1a2e;color:#fff;padding:8px 16px;border-radius:8px;font-size:.78em;font-weight:600;z-index:9999;border:1px solid rgba(226,55,68,.4);';
+    banner.innerHTML='🔧 Founder Preview — <a href="?" style="color:#e23744;text-decoration:none;">Exit</a>';
+    document.body.appendChild(banner);
+    document.getElementById('attempt-badge-display').textContent = '🔧 Preview Mode';
+    showPhase('intro');
+    return;
+  }
+
+  const attempts = parseInt(localStorage.getItem(LS.attempts)||'0');
+  if(attempts>=2){
+    showPhase('blocked');
+  } else {
+    state.currentAttempt = attempts+1;
+    state.name = localStorage.getItem(LS.name)||'';
+    state.email = localStorage.getItem(LS.email)||'';
+    if(state.name && state.email){
+      document.getElementById('attempt-badge-display').textContent = `🎯 Attempt ${state.currentAttempt} of 2`;
+      showPhase('intro');
+    } else {
+      showPhase('email');
+    }
+  }
+});
+
+// ─── LEARN CARDS ──────────────────────────────────────────
+let currentLearnCard = 0;
+function nextLearnCard(){
+  const cards = document.querySelectorAll('.learn-card');
+  if(currentLearnCard < cards.length - 1){
+    cards[currentLearnCard].classList.remove('active');
+    currentLearnCard++;
+    cards[currentLearnCard].classList.add('active');
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+}
+
+// ─── EMAIL / OTP ──────────────────────────────────────────
+function sendOTP(){
+  const name  = document.getElementById('input-name').value.trim();
+  const email = document.getElementById('input-email').value.trim();
+  const errEl = document.getElementById('email-error');
+  if(!name || !email || !email.includes('@') || !email.includes('.')){
+    errEl.style.display='block';
+    return;
+  }
+  errEl.style.display='none';
+  state.name  = name;
+  state.email = email;
+  const btn = document.getElementById('send-otp-btn');
+  btn.textContent='Sending…';
+  btn.disabled=true;
+
+  const code = Math.floor(100000+Math.random()*900000).toString();
+  state.otp = code;
+  state.otpExpiry = Date.now() + 10*60*1000;
+  state.otpAttempts = 0;
+
+  // NOTE: Update your EmailJS template to use these variables:
+  // Subject: "Your CXO Simulabs verification code"
+  // Body: "Hi {{to_name}}, your verification code for {{sim_name}} is: {{otp}}
+  //        This code expires in 10 minutes. Do not share it.
+  //        — CXO Simulabs Team | cxosimulabs.com"
+  emailjs.send(EJS_SERVICE, EJS_TEMPLATE, {
+    to_name: name,
+    to_email: email,
+    otp: code,
+    sim_name: 'CPO Simulation 12: LinkedIn',
+    message: `Hi ${name},\n\nYour CXO Simulabs verification code for CPO Simulation 12 (LinkedIn) is:\n\n${code}\n\nThis code expires in 10 minutes. Do not share it with anyone.\n\n— CXO Simulabs Team\ncxosimulabs.com`
+  }).then(()=>{
+    gtag('event','otp_requested',{sim:'CPO-SIM-12-LinkedIn'});
+    localStorage.setItem(LS.name, name);
+    localStorage.setItem(LS.email, email);
+    document.getElementById('otp-email-display').textContent = email;
+    showPhase('otp');
+    startOTPTimer();
+  }).catch(()=>{
+    gtag('event','otp_failed',{sim:'CPO-SIM-12-LinkedIn'});
+    btn.textContent='Send Verification Code →';
+    btn.disabled=false;
+    errEl.textContent='Failed to send code. Please try again.';
+    errEl.style.display='block';
+  });
+}
+
+function startOTPTimer(){
+  clearInterval(state.timerInterval);
+  state.timerInterval = setInterval(()=>{
+    const remaining = Math.max(0, state.otpExpiry - Date.now());
+    const m = Math.floor(remaining/60000);
+    const s = Math.floor((remaining%60000)/1000);
+    const el = document.getElementById('otp-timer');
+    if(el) el.textContent = `${m}:${s.toString().padStart(2,'0')}`;
+    if(remaining===0){ clearInterval(state.timerInterval); }
+  },1000);
+}
+
+function verifyOTP(){
+  const input = document.getElementById('input-otp').value.trim();
+  const errEl = document.getElementById('otp-error');
+  const okEl  = document.getElementById('otp-success');
+  errEl.style.display='none';
+  if(Date.now() > state.otpExpiry){
+    errEl.textContent='Code expired. Please request a new one.';
+    errEl.style.display='block';
+    return;
+  }
+  if(input !== state.otp){
+    state.otpAttempts++;
+    errEl.style.display='block';
+    return;
+  }
+  clearInterval(state.timerInterval);
+  okEl.style.display='block';
+  gtag('event','email_verified',{sim:'CPO-SIM-12-LinkedIn'});
+  setTimeout(()=>{
+    document.getElementById('attempt-badge-display').textContent = `🎯 Attempt ${state.currentAttempt} of 2`;
+    showPhase('intro');
+  },800);
+}
+
+function resendOTP(){
+  showPhase('email');
+  document.getElementById('input-name').value = state.name;
+  document.getElementById('input-email').value = state.email;
+}
+
+// ─── SIMULATION ───────────────────────────────────────────
+function startSim(){
+  const questions = Q[state.currentAttempt];
+  state.currentQ = 0;
+  state.answers  = [];
+  state.totalScore = 0;
+  state.maxScore   = questions.reduce((sum,q)=>sum+Math.max(...q.options.map(o=>o.points)),0);
+  gtag('event','sim_started',{sim:'CPO-SIM-12-LinkedIn',attempt:state.currentAttempt});
+  showPhase('questions');
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const questions = Q[state.currentAttempt];
+  const q = questions[state.currentQ];
+  const total = questions.length;
+  const qNum  = state.currentQ+1;
+
+  document.getElementById('q-progress-label').textContent = `Question ${qNum} of ${total}`;
+  document.getElementById('q-score-label').textContent = `Score: ${state.totalScore}`;
+  document.getElementById('progress-fill').style.width = `${((qNum-1)/total)*100}%`;
+
+  // Render scenario with bold headings
+  const scenarioEl = document.getElementById('q-scenario');
+  scenarioEl.innerHTML = q.scenario.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>');
+
+  document.getElementById('q-question').textContent = q.question;
+
+  const optionsEl = document.getElementById('q-options');
+  optionsEl.innerHTML = '';
+  q.options.forEach((opt,i)=>{
+    const div = document.createElement('div');
+    div.className='option';
+    div.textContent=opt.text;
+    div.onclick=()=>selectOption(i);
+    optionsEl.appendChild(div);
+  });
+
+  document.getElementById('q-feedback').style.display='none';
+  document.getElementById('next-btn').style.display='none';
+}
+
+function selectOption(idx){
+  const questions = Q[state.currentAttempt];
+  const q = questions[state.currentQ];
+  const chosen = q.options[idx];
+  const maxPts = Math.max(...q.options.map(o=>o.points));
+
+  // Lock all options — no color change, just prevent re-clicking
+  document.querySelectorAll('.option').forEach(el=>el.classList.add('locked'));
+
+  state.answers.push({q:state.currentQ, chosen:idx, points:chosen.points, maxPts, feedback:chosen.feedback, questionText:q.question});
+  state.totalScore += chosen.points;
+  document.getElementById('q-score-label').textContent = `Score: ${state.totalScore}`;
+
+  // Feedback is revealed at the end — just show Next button
+  document.getElementById('q-feedback').style.display='none';
+  document.getElementById('next-btn').style.display='inline-block';
+  document.getElementById('next-btn').textContent =
+    state.currentQ < questions.length-1 ? 'Next Question →' : 'See My Results →';
+}
+
+function nextQuestion(){
+  const questions = Q[state.currentAttempt];
+  if(state.currentQ < questions.length-1){
+    state.currentQ++;
+    renderQuestion();
+    document.getElementById('phase-questions').querySelector('.q-wrap').scrollTop=0;
+    window.scrollTo(0,0);
+  } else {
+    showResults();
+  }
+}
+
+// ─── RESULTS ──────────────────────────────────────────────
+function showResults(){
+  const pct = Math.round((state.totalScore/state.maxScore)*100);
+  const isPreview = new URLSearchParams(location.search).get('preview')==='true' || !!document.getElementById('founder-badge');
+  if(!isPreview){
+    const attemptsDone = parseInt(localStorage.getItem(LS.attempts)||'0') + 1;
+    localStorage.setItem(LS.attempts, attemptsDone.toString());
+    const scores = JSON.parse(localStorage.getItem(LS.scores)||'[]');
+    scores.push({attempt:state.currentAttempt, score:state.totalScore, pct, date:new Date().toISOString()});
+    localStorage.setItem(LS.scores, JSON.stringify(scores));
+  }
+
+  const tier = pct>=90?'Strategic Mastery':pct>=75?'Applied Proficiency':pct>=60?'Core Competency':'Foundational Understanding';
+  gtag('event','sim_completed',{sim:'CPO-SIM-12-LinkedIn',attempt:state.currentAttempt,score_pct:pct,tier:tier});
+  const tierClass = pct>=90?'tier-mastery':pct>=75?'tier-proficiency':pct>=60?'tier-competency':'tier-foundational';
+  const tierFeedback = {
+    'Strategic Mastery':'Outstanding. You demonstrated the kind of nuanced, first-principles thinking that defines exceptional product leaders.',
+    'Applied Proficiency':'Strong performance. You understand the core frameworks and apply them well. Focus on the questions you missed to sharpen your edge.',
+    'Core Competency':'Good foundations. You got the basics right but there are gaps in some advanced areas. Review the feedback on your lowest-scoring answers.',
+    'Foundational Understanding':'A learning opportunity. The feedback on each question contains the mental models you need. Try Attempt 2 with fresh perspective.'
+  }[tier];
+
+  document.getElementById('results-heading').textContent = `Your Results — Attempt ${state.currentAttempt}`;
+  document.getElementById('result-pct').textContent = pct+'%';
+  document.getElementById('result-score-label').textContent = `${state.totalScore} / ${state.maxScore} pts`;
+
+  const badge = document.getElementById('tier-badge');
+  badge.textContent = tier;
+  badge.className = 'tier-badge '+tierClass;
+  document.getElementById('tier-feedback').textContent = tierFeedback;
+
+  drawScoreRing(pct);
+
+  // Breakdown with full feedback
+  const bd = document.getElementById('q-breakdown');
+  const questions = Q[state.currentAttempt];
+  bd.innerHTML = state.answers.map((a,i)=>{
+    const pctQ = Math.round((a.points/a.maxPts)*100);
+    const dotClass = pctQ>=80?'dot-high':pctQ>=50?'dot-mid':'dot-low';
+    const borderColor = pctQ>=80?'#059669':pctQ>=50?'#d97706':'#dc2626';
+    const chosen = questions[i].options[a.chosen];
+    return `<div style="border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div class="q-dot ${dotClass}"></div>
+        <span style="font-weight:600;font-size:.88em;flex:1;">Q${i+1}: ${questions[i].question}</span>
+        <span style="font-weight:700;font-size:.88em;color:${borderColor};">${a.points}/${a.maxPts}</span>
+      </div>
+      <div style="font-size:.82em;color:var(--muted);margin-bottom:8px;">Your answer: <em>${chosen.text}</em></div>
+      <div style="font-size:.85em;color:#374151;line-height:1.7;background:var(--light);border-left:3px solid ${borderColor};border-radius:0 6px 6px 0;padding:10px 14px;">${a.feedback}</div>
+    </div>`;
+  }).join('');
+
+  // ── Cumulative competency analysis ──
+  const compScores = state.answers.map((a,i)=>({
+    name: COMP_MAP[i]?COMP_MAP[i].name:`Competency ${i+1}`,
+    pct:  Math.round((a.points/a.maxPts)*100)
+  }));
+
+  document.getElementById('competency-bars').innerHTML = compScores.map(c=>{
+    const color = c.pct>=80?'#059669':c.pct>=50?'#d97706':'#dc2626';
+    return `<div class="comp-bar-row">
+      <div class="comp-label">${c.name}</div>
+      <div class="comp-track"><div class="comp-fill" style="width:${c.pct}%;background:${color};"></div></div>
+      <div class="comp-pct">${c.pct}%</div>
+    </div>`;
+  }).join('');
+
+  const sorted = [...compScores].sort((a,b)=>b.pct-a.pct);
+  const strengths = sorted.slice(0,2);
+  const gaps = sorted.slice(-2);
+
+  document.getElementById('strength-tags').innerHTML = strengths.map(s=>`<span class="strength-tag">${s.name}</span>`).join('');
+  document.getElementById('gap-tags').innerHTML = gaps.map(g=>`<span class="gap-tag">${g.name}</span>`).join('');
+
+  const insightText = pct>=90
+    ? `Outstanding across the board. Your ${strengths[0].name} and ${strengths[1].name} scores reflect the kind of first-principles thinking that defines exceptional product leaders. You consistently chose depth over speed, long-term over short-term, and principle over convenience.`
+    : pct>=75
+    ? `Strong CPO instincts. You excelled in ${strengths[0].name} and ${strengths[1].name}, showing real commercial and product maturity. Your development areas — ${gaps[0].name} and ${gaps[1].name} — are exactly where the highest-impact CPOs differentiate themselves as they scale.`
+    : pct>=60
+    ? `Solid foundations with clear growth areas. You showed genuine competency in ${strengths[0].name} and ${strengths[1].name}, but the gaps in ${gaps[0].name} and ${gaps[1].name} reveal where your thinking can deepen. Review the expert feedback on your lowest-scoring answers — those mental models are what separates good from great at CPO level.`
+    : `This simulation is designed to challenge. Your instincts in ${strengths[0].name} showed promise. The gaps in ${gaps[0].name} and ${gaps[1].name} reveal where CPO-level thinking diverges most sharply from general product management. Use the feedback from this round to recalibrate — Attempt 2 gives you fresh scenarios to apply these lessons.`;
+
+  document.getElementById('insight-text').textContent = insightText;
+
+  // Show "next sim" banner and attempt 2 prompt
+  const isPreview2 = new URLSearchParams(location.search).get('preview')==='true' || !!document.getElementById('founder-badge');
+  if(isPreview2){
+    document.getElementById('attempt2-prompt').style.display='block';
+    document.getElementById('next-sim-banner').style.display='none';
+  } else if(state.currentAttempt===1){
+    document.getElementById('attempt2-prompt').style.display='block';
+    document.getElementById('next-sim-banner').style.display='none';
+  } else {
+    document.getElementById('attempt2-prompt').style.display='none';
+    document.getElementById('next-sim-banner').style.display='flex';
+  }
+
+  drawCertificate(pct, tier);
+  drawBadge(pct, tier);
+  showPhase('results');
+}
+
+function startAttempt2(){
+  state.currentAttempt = 2;
+  showPhase('intro');
+  document.getElementById('attempt-badge-display').textContent = '🎯 Attempt 2 of 2';
+}
+
+// ─── SCORE RING ───────────────────────────────────────────
+function drawScoreRing(pct){
+  const canvas = document.getElementById('scoreRingCanvas');
+  const ctx = canvas.getContext('2d');
+  const cx=80, cy=80, r=65, lw=12;
+  ctx.clearRect(0,0,160,160);
+  ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2);
+  ctx.strokeStyle='#e5e7eb'; ctx.lineWidth=lw; ctx.stroke();
+  const angle = (pct/100)*Math.PI*2 - Math.PI/2;
+  ctx.beginPath(); ctx.arc(cx,cy,r,-Math.PI/2,angle);
+  ctx.strokeStyle = pct>=90?'#16a34a':pct>=75?'#2563eb':pct>=60?'#d97706':'#dc2626';
+  ctx.lineWidth=lw; ctx.lineCap='round'; ctx.stroke();
+}
+
+// ─── SHARED HELPERS ───────────────────────────────────────
+function drawLogoText(ctx, x, y, size='bold 15px'){
+  ctx.font=`${size} Inter, Arial, sans-serif`;
+  ctx.textAlign='left';
+  const cxoW=ctx.measureText('CXO').width;
+  ctx.fillStyle='#1a1a2e'; ctx.fillText('CXO',x,y);
+  ctx.fillStyle='#e23744'; ctx.fillText(' Simulabs',x+cxoW,y);
+}
+function centeredLogo(ctx, W, y, size='bold 15px'){
+  ctx.font=`${size} Inter, Arial, sans-serif`;
+  const total=ctx.measureText('CXO Simulabs').width;
+  const cxoW=ctx.measureText('CXO').width;
+  const sx=W/2-total/2;
+  ctx.fillStyle='#1a1a2e'; ctx.fillText('CXO',sx,y);
+  ctx.fillStyle='#e23744'; ctx.fillText(' Simulabs',sx+cxoW,y);
+}
+
+// ─── CERTIFICATE ──────────────────────────────────────────
+function drawCertificate(pct, tier){
+  const canvas = document.getElementById('certCanvas');
+  const ctx = canvas.getContext('2d');
+  const W=1200, H=850;
+  canvas.width=W; canvas.height=H;
+  ctx.clearRect(0,0,W,H);
+  const CX=W/2; // center x for alignment
+  const gold='#c9a84c';
+
+  // ── Dark gradient background ──
+  const bg=ctx.createLinearGradient(0,0,W,H);
+  bg.addColorStop(0,'#0c1221'); bg.addColorStop(0.5,'#131b2e'); bg.addColorStop(1,'#1a1a2e');
+  ctx.fillStyle=bg; ctx.fillRect(0,0,W,H);
+
+  // ── Subtle dot grid ──
+  ctx.fillStyle='rgba(255,255,255,0.018)';
+  for(let x=0;x<W;x+=40)for(let y=0;y<H;y+=40){ctx.beginPath();ctx.arc(x,y,1.2,0,Math.PI*2);ctx.fill();}
+
+  // ── Gold accent bar at top ──
+  const topGrad=ctx.createLinearGradient(0,0,W,0);
+  topGrad.addColorStop(0,'#c9a84c'); topGrad.addColorStop(0.5,'#e8d48b'); topGrad.addColorStop(1,'#c9a84c');
+  ctx.fillStyle=topGrad; ctx.fillRect(0,0,W,5);
+
+  // ── Border frame ──
+  ctx.strokeStyle='rgba(201,168,76,0.25)'; ctx.lineWidth=1;
+  ctx.strokeRect(24,24,W-48,H-48);
+
+  // ── Corner ornaments ──
+  [[26,26,1,1],[W-26,26,-1,1],[26,H-26,1,-1],[W-26,H-26,-1,-1]].forEach(([x,y,sx,sy])=>{
+    ctx.strokeStyle='rgba(201,168,76,0.4)'; ctx.lineWidth=1.5;
+    ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+sx*32,y);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x,y+sy*32);ctx.stroke();
+  });
+
+  // ═══════════════════════════════════════════════════════════
+  // SECTION 1: HEADER — Logo + Track (y: 60–120)
+  // ═══════════════════════════════════════════════════════════
+  ctx.textAlign='left';
+  ctx.font='bold 26px Inter, Arial, sans-serif';
+  const cxoW=ctx.measureText('CXO').width;
+  const slW=ctx.measureText(' Simulabs').width;
+  const logoX=CX-(cxoW+slW)/2;
+  ctx.fillStyle='#ffffff'; ctx.fillText('CXO',logoX,72);
+  ctx.fillStyle='#e23744'; ctx.fillText(' Simulabs',logoX+cxoW,72);
+
+  ctx.textAlign='center';
+  ctx.font='600 11px Inter, Arial, sans-serif';
+  ctx.fillStyle=gold; ctx.letterSpacing='3px';
+  ctx.fillText('CPO TRACK  ·  SIMULATION 11',CX,98);
+  ctx.letterSpacing='0';
+
+  // Gold divider with diamond
+  ctx.strokeStyle='rgba(201,168,76,0.3)'; ctx.lineWidth=0.8;
+  ctx.beginPath();ctx.moveTo(CX-110,116);ctx.lineTo(CX+110,116);ctx.stroke();
+  ctx.fillStyle=gold;
+  ctx.beginPath();ctx.moveTo(CX,112);ctx.lineTo(CX+4,116);ctx.lineTo(CX,120);ctx.lineTo(CX-4,116);ctx.closePath();ctx.fill();
+
+  // ═══════════════════════════════════════════════════════════
+  // SECTION 2: TITLE (y: 140–160)
+  // ═══════════════════════════════════════════════════════════
+  ctx.letterSpacing='6px';
+  ctx.font='600 13px Inter, Arial, sans-serif';
+  ctx.fillStyle=gold;
+  ctx.fillText('SIMULATION COMPLETION RECORD',CX,152);
+  ctx.letterSpacing='0';
+
+  // ═══════════════════════════════════════════════════════════
+  // SECTION 3: NAME (y: 185–290)
+  // ═══════════════════════════════════════════════════════════
+  ctx.font='italic 15px Georgia, serif';
+  ctx.fillStyle='rgba(255,255,255,0.4)';
+  ctx.fillText('This certifies that',CX,200);
+
+  const name=state.name||state.email;
+  ctx.font='bold 52px Georgia, "Times New Roman", serif';
+  ctx.fillStyle='#ffffff';
+  ctx.fillText(name,CX,260);
+
+  // Gold fading underline
+  const nw=Math.min(ctx.measureText(name).width+60,W-200);
+  const ulGrad=ctx.createLinearGradient(CX-nw/2,0,CX+nw/2,0);
+  ulGrad.addColorStop(0,'rgba(201,168,76,0)'); ulGrad.addColorStop(0.3,'rgba(201,168,76,0.45)');
+  ulGrad.addColorStop(0.5,'rgba(201,168,76,0.65)'); ulGrad.addColorStop(0.7,'rgba(201,168,76,0.45)');
+  ulGrad.addColorStop(1,'rgba(201,168,76,0)');
+  ctx.strokeStyle=ulGrad; ctx.lineWidth=1.2;
+  ctx.beginPath();ctx.moveTo(CX-nw/2,275);ctx.lineTo(CX+nw/2,275);ctx.stroke();
+
+  // ═══════════════════════════════════════════════════════════
+  // SECTION 4: ACHIEVEMENT — Competency HERO, company secondary (y: 300–400)
+  // ═══════════════════════════════════════════════════════════
+  ctx.font='italic 14px Georgia, serif';
+  ctx.fillStyle='rgba(255,255,255,0.38)';
+  ctx.fillText('has completed a learning simulation exploring',CX,316);
+
+  // COMPETENCY = THE HERO
+  ctx.font='bold 28px Inter, Arial, sans-serif';
+  ctx.fillStyle='#ffffff';
+  ctx.fillText('Advanced Metrics & Growth',CX,358);
+
+  // Company = secondary context
+  ctx.font='15px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.35)';
+  ctx.fillText('through the LinkedIn case simulation',CX,390);
+
+  // ═══════════════════════════════════════════════════════════
+  // SECTION 5: METRICS — Score / Tier / Date (y: 430–560)
+  // ═══════════════════════════════════════════════════════════
+  // Horizontal divider above metrics
+  const divGrad1=ctx.createLinearGradient(100,0,W-100,0);
+  divGrad1.addColorStop(0,'rgba(201,168,76,0)'); divGrad1.addColorStop(0.2,'rgba(201,168,76,0.2)');
+  divGrad1.addColorStop(0.5,'rgba(201,168,76,0.3)'); divGrad1.addColorStop(0.8,'rgba(201,168,76,0.2)');
+  divGrad1.addColorStop(1,'rgba(201,168,76,0)');
+  ctx.strokeStyle=divGrad1; ctx.lineWidth=0.6;
+  ctx.beginPath();ctx.moveTo(100,420);ctx.lineTo(W-100,420);ctx.stroke();
+
+  const metricsY=488; // vertical center for all 3 columns
+  const colL=240, colC=CX, colR=W-240; // 3 evenly spaced columns
+  const ringColor=pct>=90?'#4ade80':pct>=75?'#60a5fa':pct>=60?'#fbbf24':'#f87171';
+
+  // — SCORE (left) — with ring
+  const ringR=58, ringLw=8;
+  ctx.beginPath();ctx.arc(colL,metricsY,ringR,0,Math.PI*2);
+  ctx.strokeStyle='rgba(255,255,255,0.06)'; ctx.lineWidth=ringLw; ctx.stroke();
+  const angle=(pct/100)*Math.PI*2-Math.PI/2;
+  ctx.beginPath();ctx.arc(colL,metricsY,ringR,-Math.PI/2,angle);
+  ctx.strokeStyle=ringColor; ctx.lineWidth=ringLw; ctx.lineCap='round'; ctx.stroke();
+  ctx.lineCap='butt';
+  ctx.font='bold 44px Inter, Arial, sans-serif';
+  ctx.fillStyle='#ffffff';
+  ctx.fillText(pct+'%',colL,metricsY+14);
+  ctx.font='600 9px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.3)'; ctx.letterSpacing='2px';
+  ctx.fillText('SCORE',colL,metricsY+38);
+  ctx.letterSpacing='0';
+
+  // — TIER (center) —
+  ctx.font='bold 26px Inter, Arial, sans-serif';
+  ctx.fillStyle=ringColor;
+  ctx.fillText(tier,colC,metricsY+8);
+  ctx.font='600 9px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.3)'; ctx.letterSpacing='2px';
+  ctx.fillText('PERFORMANCE TIER',colC,metricsY+32);
+  ctx.letterSpacing='0';
+
+  // — DATE (right) —
+  const d=new Date();
+  const dateStr=d.toLocaleString('default',{month:'long'})+' '+d.getDate()+', '+d.getFullYear();
+  ctx.font='bold 20px Inter, Arial, sans-serif';
+  ctx.fillStyle='#ffffff';
+  ctx.fillText(dateStr,colR,metricsY+8);
+  ctx.font='600 9px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.3)'; ctx.letterSpacing='2px';
+  ctx.fillText('DATE ISSUED',colR,metricsY+32);
+  ctx.letterSpacing='0';
+
+  // Vertical separators between columns
+  ctx.strokeStyle='rgba(201,168,76,0.15)'; ctx.lineWidth=0.8;
+  const sepTop=metricsY-52, sepBot=metricsY+48;
+  ctx.beginPath();ctx.moveTo((colL+colC)/2,sepTop);ctx.lineTo((colL+colC)/2,sepBot);ctx.stroke();
+  ctx.beginPath();ctx.moveTo((colC+colR)/2,sepTop);ctx.lineTo((colC+colR)/2,sepBot);ctx.stroke();
+
+  // Horizontal divider below metrics
+  ctx.strokeStyle=divGrad1; ctx.lineWidth=0.6;
+  ctx.beginPath();ctx.moveTo(100,556);ctx.lineTo(W-100,556);ctx.stroke();
+
+  // ═══════════════════════════════════════════════════════════
+  // SECTION 6: COMPETENCIES ASSESSED (y: 580–680)
+  // ═══════════════════════════════════════════════════════════
+  ctx.letterSpacing='2.5px';
+  ctx.font='600 9px Inter, Arial, sans-serif';
+  ctx.fillStyle=gold;
+  ctx.fillText('COMPETENCIES ASSESSED',CX,586);
+  ctx.letterSpacing='0';
+
+  const comps=COMP_MAP.map(c=>c.name);
+  ctx.font='11.5px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.45)';
+  // 2 rows of 5, evenly spaced
+  const compStartX=160, compSpacing=220;
+  comps.slice(0,5).forEach((c,i)=>{ctx.fillText(c,compStartX+i*compSpacing,614);});
+  comps.slice(5,10).forEach((c,i)=>{ctx.fillText(c,compStartX+i*compSpacing,640);});
+
+  // ═══════════════════════════════════════════════════════════
+  // SECTION 7: FOOTER (y: 780–830)
+  // ═══════════════════════════════════════════════════════════
+  // Seal (bottom-right)
+  const sealX=W-90, sealY=H-85, sealR=32;
+  ctx.strokeStyle='rgba(201,168,76,0.3)'; ctx.lineWidth=1.2;
+  ctx.beginPath();ctx.arc(sealX,sealY,sealR,0,Math.PI*2);ctx.stroke();
+  ctx.strokeStyle='rgba(201,168,76,0.12)'; ctx.lineWidth=0.6;
+  ctx.beginPath();ctx.arc(sealX,sealY,sealR-6,0,Math.PI*2);ctx.stroke();
+  ctx.fillStyle='rgba(201,168,76,0.04)';
+  ctx.beginPath();ctx.arc(sealX,sealY,sealR,0,Math.PI*2);ctx.fill();
+  ctx.font='bold 7px Inter, Arial, sans-serif';
+  ctx.fillStyle=gold; ctx.letterSpacing='1.5px';
+  ctx.fillText('COMPLETED',sealX,sealY-6);
+  ctx.letterSpacing='0';
+  ctx.font='bold 18px Arial';
+  ctx.fillStyle=gold;
+  ctx.fillText('✓',sealX,sealY+10);
+
+  // Footer divider
+  const footGrad=ctx.createLinearGradient(50,0,W-50,0);
+  footGrad.addColorStop(0,'rgba(201,168,76,0)'); footGrad.addColorStop(0.3,'rgba(201,168,76,0.2)');
+  footGrad.addColorStop(0.5,'rgba(201,168,76,0.3)'); footGrad.addColorStop(0.7,'rgba(201,168,76,0.2)');
+  footGrad.addColorStop(1,'rgba(201,168,76,0)');
+  ctx.strokeStyle=footGrad; ctx.lineWidth=0.6;
+  ctx.beginPath();ctx.moveTo(50,H-55);ctx.lineTo(W-50,H-55);ctx.stroke();
+
+  // Footer text
+  ctx.textAlign='left';
+  ctx.font='12px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.5)';
+  ctx.fillText('© 2026 CXO Simulabs  ·  Not a professional certification  ·  Not affiliated with LinkedIn Corporation',55,H-32);
+  ctx.textAlign='right';
+  ctx.fillStyle='rgba(255,255,255,0.5)';
+  ctx.font='bold 11px Inter, Arial, sans-serif';
+  ctx.fillText('www.cxosimulabs.com',W-55,H-32);
+}
+
+// ─── INSTAGRAM BADGE ──────────────────────────────────────
+function drawBadge(pct, tier){
+  const canvas=document.getElementById('badgeCanvas');
+  const ctx=canvas.getContext('2d');
+  const S=1080;
+  ctx.clearRect(0,0,S,S);
+  const C=S/2; // center
+  const gold='#c9a84c';
+
+  // ── Dark gradient background ──
+  const bg=ctx.createLinearGradient(0,0,S,S);
+  bg.addColorStop(0,'#0c1221'); bg.addColorStop(0.5,'#131b2e'); bg.addColorStop(1,'#1a1a2e');
+  ctx.fillStyle=bg; ctx.fillRect(0,0,S,S);
+
+  // ── Subtle dot grid ──
+  ctx.fillStyle='rgba(255,255,255,0.018)';
+  for(let x=0;x<S;x+=44)for(let y=0;y<S;y+=44){ctx.beginPath();ctx.arc(x,y,1.2,0,Math.PI*2);ctx.fill();}
+
+  // ── Gold bar top ──
+  const topGrad=ctx.createLinearGradient(0,0,S,0);
+  topGrad.addColorStop(0,'#c9a84c'); topGrad.addColorStop(0.5,'#e8d48b'); topGrad.addColorStop(1,'#c9a84c');
+  ctx.fillStyle=topGrad; ctx.fillRect(0,0,S,6);
+
+  // ── Border + corners ──
+  ctx.strokeStyle='rgba(201,168,76,0.25)'; ctx.lineWidth=1;
+  ctx.strokeRect(24,24,S-48,S-48);
+  [[26,26,1,1],[S-26,26,-1,1],[26,S-26,1,-1],[S-26,S-26,-1,-1]].forEach(([x,y,sx,sy])=>{
+    ctx.strokeStyle='rgba(201,168,76,0.4)'; ctx.lineWidth=1.5;
+    ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+sx*28,y);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x,y+sy*28);ctx.stroke();
+  });
+
+  // ── Logo ──
+  ctx.textAlign='left';
+  ctx.font='bold 36px Inter, Arial, sans-serif';
+  const cW=ctx.measureText('CXO').width;
+  const sW=ctx.measureText(' Simulabs').width;
+  const lStart=C-(cW+sW)/2;
+  ctx.fillStyle='#ffffff'; ctx.fillText('CXO',lStart,82);
+  ctx.fillStyle='#e23744'; ctx.fillText(' Simulabs',lStart+cW,82);
+
+  // ── Track label ──
+  ctx.textAlign='center';
+  ctx.font='600 13px Inter, Arial, sans-serif';
+  ctx.fillStyle=gold; ctx.letterSpacing='3px';
+  ctx.fillText('CPO TRACK  ·  SIMULATION 11',C,114);
+  ctx.letterSpacing='0';
+
+  // ── Gold divider ──
+  ctx.strokeStyle='rgba(201,168,76,0.3)'; ctx.lineWidth=0.8;
+  ctx.beginPath();ctx.moveTo(C-100,134);ctx.lineTo(C+100,134);ctx.stroke();
+  ctx.fillStyle=gold;
+  ctx.beginPath();ctx.moveTo(C,130);ctx.lineTo(C+4,134);ctx.lineTo(C,138);ctx.lineTo(C-4,134);ctx.closePath();ctx.fill();
+
+  // ── Competency HERO ──
+  ctx.font='bold 36px Inter, Arial, sans-serif';
+  ctx.fillStyle='#ffffff';
+  ctx.fillText('Product',C,186);
+  ctx.font='bold 36px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.5)';
+  ctx.fillText('Advanced Metrics & Growth',C,228);
+
+  // ── Company context ──
+  ctx.font='16px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.3)';
+  ctx.fillText('LinkedIn case simulation',C,262);
+
+  // ── Name ──
+  const name=state.name||state.email;
+  ctx.font='bold 40px Georgia, "Times New Roman", serif';
+  ctx.fillStyle='#ffffff';
+  ctx.fillText(name,C,320);
+  // Gold underline
+  const nw2=Math.min(ctx.measureText(name).width+40,S-120);
+  const ulGrad=ctx.createLinearGradient(C-nw2/2,0,C+nw2/2,0);
+  ulGrad.addColorStop(0,'rgba(201,168,76,0)'); ulGrad.addColorStop(0.3,'rgba(201,168,76,0.4)');
+  ulGrad.addColorStop(0.5,'rgba(201,168,76,0.55)'); ulGrad.addColorStop(0.7,'rgba(201,168,76,0.4)');
+  ulGrad.addColorStop(1,'rgba(201,168,76,0)');
+  ctx.strokeStyle=ulGrad; ctx.lineWidth=1;
+  ctx.beginPath();ctx.moveTo(C-nw2/2,334);ctx.lineTo(C+nw2/2,334);ctx.stroke();
+
+  // ── Score ring ──
+  const ringCY=560, r=170, lw=22;
+  ctx.beginPath();ctx.arc(C,ringCY,r,0,Math.PI*2);
+  ctx.strokeStyle='rgba(255,255,255,0.06)'; ctx.lineWidth=lw; ctx.stroke();
+  const angle=(pct/100)*Math.PI*2-Math.PI/2;
+  const ringColor=pct>=90?'#4ade80':pct>=75?'#60a5fa':pct>=60?'#fbbf24':'#f87171';
+  ctx.beginPath();ctx.arc(C,ringCY,r,-Math.PI/2,angle);
+  ctx.strokeStyle=ringColor; ctx.lineWidth=lw; ctx.lineCap='round'; ctx.stroke();
+  ctx.lineCap='butt';
+
+  // Score text
+  ctx.font='bold 120px Inter, Arial, sans-serif';
+  ctx.fillStyle='#ffffff';
+  ctx.fillText(pct+'%',C,ringCY+40);
+
+  // Tier
+  ctx.font='bold 30px Inter, Arial, sans-serif';
+  ctx.fillStyle=ringColor;
+  ctx.fillText(tier,C,ringCY+88);
+
+  // ── Footer ──
+  const fDivGrad=ctx.createLinearGradient(40,0,S-40,0);
+  fDivGrad.addColorStop(0,'rgba(201,168,76,0)'); fDivGrad.addColorStop(0.3,'rgba(201,168,76,0.2)');
+  fDivGrad.addColorStop(0.5,'rgba(201,168,76,0.3)'); fDivGrad.addColorStop(0.7,'rgba(201,168,76,0.2)');
+  fDivGrad.addColorStop(1,'rgba(201,168,76,0)');
+  ctx.strokeStyle=fDivGrad; ctx.lineWidth=0.6;
+  ctx.beginPath();ctx.moveTo(40,S-100);ctx.lineTo(S-40,S-100);ctx.stroke();
+
+  // Seal bottom-right
+  const sealX=S-90, sealY=S-58;
+  ctx.strokeStyle='rgba(201,168,76,0.28)'; ctx.lineWidth=1;
+  ctx.beginPath();ctx.arc(sealX,sealY,22,0,Math.PI*2);ctx.stroke();
+  ctx.font='bold 14px Arial'; ctx.fillStyle=gold;
+  ctx.fillText('✓',sealX,sealY+5);
+
+  ctx.font='bold 22px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.45)';
+  ctx.fillText('www.cxosimulabs.com',C,S-52);
+
+  ctx.font='14px Inter, Arial, sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.2)';
+  ctx.fillText('Try the free simulation →',C,S-28);
+}
+
+function getPctTier(){
+  return {
+    pct: parseInt(document.getElementById('result-pct').textContent),
+    tier: document.getElementById('tier-badge').textContent
+  };
+}
+function downloadCert(){
+  const {pct,tier}=getPctTier();
+  gtag('event','cert_downloaded',{sim:'CPO-SIM-12-LinkedIn',score_pct:pct,tier:tier});
+  const canvas=document.getElementById('certCanvas');
+  canvas.width=1200; canvas.height=850;
+  drawCertificate(pct,tier);
+  const link=document.createElement('a');
+  link.download=`CXO-Simulabs-Certificate-${(state.name||'').replace(/\s/g,'-')}.png`;
+  link.href=canvas.toDataURL('image/png'); link.click();
+}
+function downloadBadge(){
+  const {pct,tier}=getPctTier();
+  gtag('event','badge_downloaded',{sim:'CPO-SIM-12-LinkedIn',score_pct:pct,tier:tier});
+  const canvas=document.getElementById('badgeCanvas');
+  drawBadge(pct,tier);
+  const link=document.createElement('a');
+  link.download=`CXO-Simulabs-Badge-${(state.name||'').replace(/\s/g,'-')}.png`;
+  link.href=canvas.toDataURL('image/png'); link.click();
+}
+function shareLinkedIn(){
+  gtag('event','share_linkedin',{sim:'CPO-SIM-12-LinkedIn'});
+  const {pct,tier}=getPctTier();
+  const text=encodeURIComponent(`I just scored ${pct}% (${tier}) on the LinkedIn Advanced Metrics & Growth Simulation by CXO Simulabs — 10 real product decisions, expert feedback.\n\nTry it free: https://cxosimulabs.com\n\n#ProductManagement #CPO #CXOSimulabs #GrowthMetrics`);
+  window.open(`https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcxosimulabs.com&summary=${text}`,'_blank');
+}
+function shareTwitter(){
+  const {pct,tier}=getPctTier();
+  const text=encodeURIComponent(`Just scored ${pct}% (${tier}) on the LinkedIn Advanced Metrics & Growth Simulation by @CXOSimulabs — 10 real product decisions, expert feedback. Try it free 👇\nhttps://cxosimulabs.com\n#CPO #ProductManagement #GrowthMetrics`);
+  window.open(`https://twitter.com/intent/tweet?text=${text}`,'_blank');
+}
+function shareWhatsApp(){
+  const {pct,tier}=getPctTier();
+  const text=encodeURIComponent(`I scored ${pct}% (${tier}) on the LinkedIn Advanced Metrics & Growth Simulation by CXO Simulabs — 10 real product decisions with expert feedback. Try it free: https://cxosimulabs.com`);
+  window.open(`https://wa.me/?text=${text}`,'_blank');
+}
+function copyLink(){
+  navigator.clipboard.writeText('https://cxosimulabs.com').then(()=>{
+    const btn=document.getElementById('copy-link-btn');
+    btn.textContent='✓ Copied!';
+    setTimeout(()=>btn.textContent='Copy Link',2000);
+  });
+}
+</script>
+</body>
+</html>
